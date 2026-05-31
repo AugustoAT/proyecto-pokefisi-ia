@@ -4,6 +4,7 @@ import json
 import random
 from environment import Pokemon, Environment
 from agents import MinimaxAgent, TYPE_MULTIPLIERS
+from environment import TYPE_MULTIPLIERS  # <--- Ahora lo importa de aquí
 
 # Paleta de colores Game Boy Original
 GB_BG = "#9bbc0f"       # Verde claro (Fondo)
@@ -46,7 +47,7 @@ class PokefisiGUI:
         self.env = Environment(team1, team2)
         
         # Insertamos tu IA definitiva aquí (Ajusta los pesos si lo deseas)
-        pesos = {'damage_score': 0.35, 'speed_score': 0.15, 'type_score': 0.25, 'alive_score': 0.25}
+        pesos = {'damage_score': 0.2888, 'speed_score': 0.2357, 'type_score': 0.2008, 'alive_score': 0.2747}
         self.ia_agent = MinimaxAgent(player_id=2, depth=3, weights=pesos)
 
     def create_widgets(self):
@@ -134,7 +135,7 @@ class PokefisiGUI:
             self.btn_switch.config(state=tk.NORMAL) 
             
             self.log(f"¡{self.p1_active.name} se desmayó! Selecciona RELEVAR.")
-            
+
     def open_switch_menu(self):
         """Abre una ventana emergente para elegir otro Pokémon"""
         switch_win = tk.Toplevel(self.root)

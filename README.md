@@ -1,300 +1,239 @@
-# PokeProyecto 🔴
+# Pokefisi 🥊
+**Simulación Estratégica de Combates Pokémon con Inteligencia Artificial**
 
-Un simulador interactivo de combate Pokémon implementado en Python, donde puedes jugar contra diferentes agentes de IA con distintos niveles de inteligencia.
+Simulador avanzado de combates 3 vs 3 basado en mecánicas de Pokémon, desarrollado para explorar diferentes estrategias de IA. El proyecto implementa múltiples agentes cognitivos progresivamente más complejos, desde toma de decisiones aleatoria hasta un algoritmo Minimax optimizado mediante Algoritmos Genéticos.
 
-## 📋 Descripción
+## 📋 Tabla de Contenidos
+- [Características](#características)
+- [Arquitectura de Agentes](#-arquitectura-de-agentes)
+- [Estructura del Proyecto](#-estructura-del-proyecto)
+- [Instalación](#-instalación)
+- [Uso](#-cómo-usar-el-proyecto)
+- [Descripción de Módulos](#-módulos-principales)
+- [Datos y Configuración](#-datos-y-configuración)
+- [Resultados y Análisis](#-resultados-y-análisis)
 
-PokeProyecto es un proyecto educativo que implementa un sistema completo de combate Pokémon basado en:
-- **Fórmula matemática realista**: Cálculo de daño basado en ataque, defensa, poder del movimiento y velocidad
-- **Múltiples agentes de IA**: Desde comportamiento aleatorio hasta heurísticas inteligentes
-- **Modo interactivo**: Juega directamente contra la CPU desde la consola
-- **Base de datos real**: Utiliza datos de Pokémon Showdown (Generaciones 1-3)
+## ✨ Características
+- **Simulación realista:** Mecánicas basadas en Pokémon Showdown
+- **Múltiples agentes IA:** Desde aleatorios hasta Minimax con poda alfa-beta
+- **Interfaz gráfica:** Juega directamente contra la IA
+- **Optimización genética:** Entrena y mejora agentes automáticamente
+- **Batería de experimentos:** Ejecuta múltiples simulaciones y analiza resultados
+- **Base de datos extensa:** Pokémon de múltiples generaciones (Gen 1-9) y modificaciones
 
-## 🎮 Características Principales
+## 🧠 Arquitectura de Agentes
 
-- **Sistema de combate realista**: Implementación de la fórmula de daño: `Damage = (Attack / Defense) * BasePower - Speed * K`
-- **Tres tipos de agentes**:
-  - 🎲 **Agente Aleatorio**: Elige acciones sin criterio (baseline)
-  - 🧠 **Agente Heurístico**: Maximiza daño basado en diferencia de HP
-  - 👤 **Agente Humano**: Control total del jugador vía consola
-- **Equipos balanceados**: 3 Pokémon por jugador, seleccionados aleatoriamente
-- **Movimientos variados**: 4 movimientos elegidos aleatoriamente de 8 disponibles por Pokémon
-- **Combate por turnos**: Orden determinado por velocidad (Stat SPE)
+El proyecto implementa una jerarquía de 4 niveles de agentes:
 
-## 🏗️ Estructura del Proyecto
+1. **Agente Aleatorio (Nivel 1)**
+   - Toma decisiones completamente al azar
+   - Sirve como base de referencia
+
+2. **Agente Heurístico Básico - Greedy (Nivel 2)**
+   - Usa heurísticas simples para evaluar movimientos
+   - Selecciona el mejor movimiento disponible
+
+3. **Agente Heurístico Avanzado (Nivel 3)**
+   - Evalúa múltiples factores: HP, Velocidad, Ventaja de Tipos, Pokémon Vivos
+   - Toma decisiones más estratégicas
+
+4. **Agente Minimax con Poda Alfa-Beta (Nivel 4)**
+   - Búsqueda en árbol de profundidad 3
+   - Poda alfa-beta para optimización
+   - Capacidad de cambiar Pokémon estratégicamente
+   - Optimizado mediante Algoritmos Genéticos
+
+## 📁 Estructura del Proyecto
 
 ```
 PokeProyecto/
-├── main.py              # Punto de entrada - Lógica del combate interactivo
-├── agents.py            # Implementación de los tres tipos de agentes
-├── environment.py       # Clase Pokemon y Environment (motor de combate)
-├── data_loader.py       # Generador de roster desde API de Pokémon Showdown
-├── data/
-│   └── pokemon_roster.json   # Base de datos procesada (30 Pokémon Gen 1-3)
-└── README.md            # Este archivo
+├── 📄 main.py                    # Punto de entrada principal
+├── 🤖 agents.py                  # Definición de todos los agentes IA
+├── 🌍 environment.py             # Simulador del combate y mecánicas del juego
+├── 📊 data_loader.py             # Carga y procesa datos de Pokémon
+├── 🧬 algoritmos_geneticos.py    # Algoritmo genético para optimizar agentes
+├── 🧪 experimentos.py            # Batería de experimentos y análisis
+├── 🎮 gui.py                     # Interfaz gráfica (Juega contra la IA)
+├── 📈 resultados_experimentos.csv # Resultados de simulaciones
+├── 📚 data/                      # Base de datos de Pokémon y mecánicas
+│   ├── abilities.ts              # Habilidades de Pokémon
+│   ├── items.ts                  # Objetos del juego
+│   ├── moves.ts                  # Movimientos disponibles
+│   ├── pokedex.ts                # Información de todas las especies
+│   ├── pokemon_roster.json       # Lista de Pokémon
+│   ├── typechart.ts              # Tabla de tipos y efectividad
+│   ├── learnsets.ts              # Qué movimientos aprenden los Pokémon
+│   ├── natures.ts                # Naturalezas y modificadores de stats
+│   ├── conditions.ts             # Condiciones de estado (paralisis, etc)
+│   ├── formats-data.ts           # Configuración de formatos de batalla
+│   ├── rulesets.ts               # Reglas de juego
+│   ├── scripts.ts                # Scripts del juego
+│   ├── aliases.ts                # Alias de nombres
+│   ├── pokemongo.ts              # Datos de Pokémon GO (opcional)
+│   ├── tags.ts                   # Etiquetas de clasificación
+│   ├── 🎨 mods/                  # Variaciones y mods del juego
+│   │   ├── gen1/ - gen9/         # Datos por generación (1-9)
+│   │   ├── afd/, biomechmons/    # Mods personalizados
+│   │   ├── champions/, chatbats/ # Formatos especiales
+│   │   └── ... (múltiples mods)
+│   ├── 🎲 random-battles/        # Datos para batallas aleatorias por formato
+│   └── 📝 text/                  # Recursos de texto
+├── 📖 README.md                  # Este archivo
+└── .gitignore
 ```
 
-## 📦 Requisitos
+## 🔧 Instalación
 
+### Requisitos previos
 - **Python 3.8+**
-- **Librerías**:
-  - `requests` - Para descargar datos de Pokémon Showdown
+- **pip** (gestor de paquetes de Python)
 
-## ⚙️ Instalación
+### Pasos de instalación
 
-1. **Clonar o descargar el repositorio**:
+1. **Clonar o descargar el repositorio:**
+   ```bash
+   cd PokeProyecto
+   ```
+
+2. **Instalar dependencias:**
+   ```bash
+   pip install requests
+   ```
+   - `requests`: Utilizado por `data_loader.py` para descargar datos de Pokémon Showdown
+
+3. **Generar/actualizar la base de datos (opcional):**
+   ```bash
+   python data_loader.py
+   ```
+   Esto descarga y procesa la información más reciente de Pokémon si la carpeta `data/` no existe.
+
+## 🚀 Cómo Usar el Proyecto
+
+### 1. Jugar contra la IA (Interfaz Gráfica)
+Interfaz interactiva donde puedes enfrentarte al agente Minimax:
 ```bash
-cd PokeProyecto
+python gui.py
 ```
+- **Requisitos:** Asegurate que la base de datos `data/` existe
+- **Cómo jugar:** Selecciona tus movimientos y cambia de Pokémon estratégicamente
 
-2. **Instalar dependencias**:
+### 2. Entrenar la IA (Algoritmo Genético)
+Optimiza los parámetros del agente Minimax mediante Algoritmos Genéticos:
 ```bash
-pip install requests
+python algoritmos_geneticos.py
 ```
+- Evolucionan parámetros de heurísticas
+- Genera mejores agentes automáticamente
+- Los resultados se guardan para posterior análisis
 
-3. **Generar la base de datos** (opcional - la primera vez):
+### 3. Ejecutar Batería de Experimentos
+Realiza múltiples simulaciones y análisis comparativos:
 ```bash
-python data_loader.py
+python experimentos.py
 ```
+- Compara el desempeño de diferentes agentes
+- Ejecuta torneos entre agentes
+- Genera estadísticas y métricas en `resultados_experimentos.csv`
 
-## 🚀 Cómo Usar
-
-### Jugar Contra la IA
-
+### 4. Ejecutar el Programa Principal
+Punto de entrada con opciones generales:
 ```bash
 python main.py
 ```
 
-El programa:
-1. Carga 2 equipos aleatorios de Pokémon
-2. Te asigna el control (Jugador 1 - HumanAgent)
-3. La CPU juega automáticamente (Jugador 2 - BasicHeuristicAgent)
-4. Por cada turno, selecciona uno de los 4 movimientos disponibles
-5. El combate continúa hasta que todos los Pokémon de un equipo sean debilitados
+## 📚 Módulos Principales
 
-**Ejemplo de sesión**:
-```
-Cargando base de datos...
+### `agents.py`
+Define la lógica de todos los agentes IA:
+- **RandomAgent:** Selecciona movimientos aleatoriamente
+- **GreedyAgent:** Heurística simple de maximización
+- **AdvancedAgent:** Heurística compleja con múltiples factores
+- **MinimaxAgent:** Búsqueda Minimax con poda alfa-beta
 
-========================================
-¡COMIENZA EL COMBATE POKEFISI INTERACTIVO!
-========================================
+### `environment.py`
+Simula el ambiente del combate:
+- Mecánicas de batalla (HP, velocidad, efectividad de tipos)
+- Validación de acciones legales
+- Manejo de cambios de Pokémon
+- Cálculo de daño y estados
 
---- Turno 1 ---
-J1 (TÚ): Pikachu [HP: 45/45]
-J2 (CPU): Charizard [HP: 78/78]
+### `data_loader.py`
+Gestiona la carga de datos:
+- Descarga datos de Pokémon Showdown si es necesario
+- Procesa archivos TypeScript en formatos utilizables
+- Valida integridad de datos
+- Cachea información para rápido acceso
 
---- Tu Turno ---
-¿Qué debería hacer Pikachu?
-  [0]: Thunderbolt (Poder: 90, Tipo: Electric)
-  [1]: Thunder Wave (Poder: 0, Tipo: Electric)
-  [2]: Quick Attack (Poder: 40, Tipo: Normal)
-  [3]: Iron Tail (Poder: 100, Tipo: Steel)
+### `algoritmos_geneticos.py`
+Implementa optimización mediante Algoritmos Genéticos:
+- Evoluciona parámetros de agentes
+- Selección, cruzamiento y mutación
+- Evaluación de aptitud mediante simulación
+- Tracking de generaciones y mejoras
 
-Elige el número de tu movimiento (0-3): 0
+### `experimentos.py`
+Coordina batería de experimentos:
+- Define escenarios de prueba
+- Ejecuta múltiples simulaciones
+- Recopila estadísticas
+- Exporta resultados a CSV
 
-> Tu Pikachu usó su ataque e hizo 25 de daño.
-> El Charizard enemigo atacó e hizo 18 de daño.
-```
+### `gui.py`
+Interfaz gráfica para jugar:
+- Visualización del estado de batalla
+- Interfaz para seleccionar acciones
+- Visualización del Pokémon enemigo
+- Sistema de turnos interactivo
 
-## 🤖 Agentes
+## 📊 Datos y Configuración
 
-### Agent (Clase Base)
-Clase abstracta que define la interfaz común para todos los agentes.
+### Fuentes de Datos
+- Todos los datos base provienen de **Pokémon Showdown**
+- Incluye Pokémon de generaciones 1-9
+- Múltiples formatos de batalla (competitive, casual, etc)
 
-```python
-class Agent:
-    def choose_action(self, environment):
-        raise NotImplementedError
-```
+### Estructura de Datos
+- **Pokédex (`pokedex.ts`):** Estadísticas, tipos, habilidades
+- **Movimientos (`moves.ts`):** Potencia, precisión, efectos secundarios
+- **Items (`items.ts`):** Bonificaciones, efectos en batalla
+- **Tipos (`typechart.ts`):** Efectividad (super-efectivo, débil, resistente)
+- **Naturalezas (`natures.ts`):** Modificadores de estadísticas
 
-### RandomAgent - Agente Aleatorio (Nivel 1)
-- **Comportamiento**: Selecciona uno de los 4 movimientos al azar
-- **Uso**: Baseline para comparación
-- **Complejidad**: O(1)
+### Mods y Variaciones
+- **Generaciones específicas:** Datos limitados a cada generación (Gen1-Gen9)
+- **Modificaciones personalizadas:** Mods alternativos para experimentación
+- **Batallas aleatorias:** Datos para generar equipos automáticos
 
-```python
-jugador = RandomAgent(player_id=1)
-```
+## 📈 Resultados y Análisis
 
-### BasicHeuristicAgent - Agente Heurístico (Nivel 2)
-- **Comportamiento**: Simula todos los ataques disponibles y elige el que máximo daño hace
-- **Estrategia**: Maximizar la diferencia de HP a su favor
-- **Complejidad**: O(n) donde n = número de movimientos (4)
+### Archivo de Resultados
+Los resultados experimentales se guardan en **`resultados_experimentos.csv`** con:
+- Comparativa de desempeño entre agentes
+- Tasa de victorias/derrotas
+- Estadísticas por formato de batalla
+- Evolución del entrenamiento genético
 
-```python
-jugador = BasicHeuristicAgent(player_id=2)
-```
-
-### HumanAgent - Agente Humano
-- **Comportamiento**: Espera entrada del usuario por consola
-- **Validación**: Garantiza que el input sea válido (0-3)
-- **Interfaz**: Muestra estadísticas de cada movimiento
-
-```python
-jugador = HumanAgent(player_id=1)
-```
-
-## 🎯 Clases Principales
-
-### Pokemon
-Representa un Pokémon individual con:
-- **Atributos**: Nombre, tipos, estadísticas (HP, ATK, DEF, SPE)
-- **Movimientos**: 4 elegidos aleatoriamente de 8 disponibles
-- **Métodos**:
-  - `is_fainted()`: Verifica si tiene 0 HP
-  - `take_damage(damage)`: Aplica daño (mínimo 0 HP)
-
-```python
-pkmn = Pokemon(data_dict)
-pkmn.take_damage(25)
-```
-
-### Environment
-Motor de combate que gestiona:
-- **Equipos**: Lista de Pokémon por jugador
-- **Estado activo**: Índice del Pokémon en combate
-- **Turno**: Cálculo de daño y orden de ataque
-
-**Métodos principales**:
-- `get_active_pokemon(player)`: Devuelve el Pokémon en combate
-- `calculate_damage(attacker, defender, move)`: Calcula daño con la fórmula matemática
-- `check_win_condition()`: Determina al ganador (0=continúa, 1=J1, 2=J2)
-- `execute_turn(action_p1, action_p2)`: Ejecuta un turno completo
-
-## 📊 Fórmula de Daño
-
-La fórmula de cálculo de daño se basa en:
-
-$$\text{Damage} = \max(1, \left\lfloor \frac{\text{ATK}}{\text{DEF}_{\text{opp}}} \times \text{BasePower} - \text{SPE}_{\text{opp}} \times K \right\rfloor)$$
-
-Donde:
-- **ATK**: Estadística de ataque del atacante
-- **DEF_opp**: Estadística de defensa del defensor
-- **BasePower**: Poder base del movimiento
-- **SPE_opp**: Estadística de velocidad del defensor
-- **K**: Factor de ajuste (por defecto 0.5)
-
-## 📊 Flujo del Combate
-
-```
-1. Cargar equipos aleatorios
-2. MIENTRAS no hay ganador:
-   a. Mostrar estado de Pokémon activos
-   b. Obtener acción del Jugador 1 (HumanAgent)
-   c. Obtener acción del Jugador 2 (CPU)
-   d. Ejecutar turno:
-      - Determinar quién ataca primero (por SPE)
-      - Calcular y aplicar daño
-      - Verificar si alguien fue debilitado
-   e. Si no hay ganador, continuar
-3. Mostrar ganador
-```
-
-## 💾 Base de Datos
-
-### Generación del Roster
-El archivo `data_loader.py` descarga y procesa datos de Pokémon Showdown:
-
+### Cómo Analizar Resultados
 ```bash
-python data_loader.py
+# Abre el CSV con tu herramienta preferida
+python -m pandas resultados_experimentos.csv  # O Excel, LibreOffice, etc
 ```
 
-**Características**:
-- 30 Pokémon de Generaciones 1-3 (aleatorios)
-- 8 movimientos por Pokémon (con BasePower > 0)
-- Estadísticas reales de Pokémon Showdown
-- Formato JSON limpio y optimizado
+## 🎯 Casos de Uso
 
-**Estructura del JSON**:
-```json
-{
-  "Pikachu": {
-    "id": 25,
-    "types": ["Electric"],
-    "stats": {
-      "hp": 35,
-      "atk": 55,
-      "def": 40,
-      "spa": 50,
-      "spd": 50,
-      "spe": 90
-    },
-    "moves": [
-      {
-        "name": "Thunderbolt",
-        "power": 90,
-        "type": "Electric",
-        "accuracy": 100
-      }
-    ]
-  }
-}
-```
+- **Investigación académica:** Análisis de estrategias de IA en juegos
+- **Aprendizaje:** Entender algoritmos de búsqueda (Minimax, Alfa-Beta)
+- **Optimización:** Mejorar agentes con Algoritmos Genéticos
+- **Competición:** Torneo entre diferentes agentes
+- **Diversión:** ¡Juega contra una IA fuerte!
 
-## 🔧 Personalización
+## 📝 Notas de Desarrollo
 
-### Cambiar Jugadores
-En `main.py`, puedes cambiar los agentes:
+- El proyecto está optimizado para simulaciones rápidas
+- Los datos se cachean para mejorar performance
+- La profundidad de búsqueda del Minimax puede ajustarse
+- Soporta múltiples formatos de batalla simultáneamente
 
-```python
-# Jugar como RandomAgent vs BasicHeuristicAgent
-jugador1 = RandomAgent(player_id=1)
-jugador2 = BasicHeuristicAgent(player_id=2)
-run_battle(jugador1, jugador2, equipo1, equipo2)
-```
+## 🤝 Contribuciones
 
-### Ajustar Parámetros
-En `environment.py`:
-```python
-# Factor de ajuste de la fórmula de daño
-env = Environment(team1, team2, k_factor=0.5)
-
-# Número de Pokémon por equipo
-equipo1 = load_team('data/pokemon_roster.json', num_pokemon=4)
-```
-
-En `data_loader.py`:
-```python
-MAX_DEX_NUM = 386   # Cambiar generación máxima
-ROSTER_SIZE = 50    # Cambiar cantidad de Pokémon
-MOVES_PER_PKMN = 12 # Cambiar movimientos disponibles
-```
-
-## 📝 Notas Técnicas
-
-- **Velocidad en turnos**: El Pokémon con mayor SPE ataca primero
-- **Daño mínimo**: El daño mínimo posible es 1 (nunca 0)
-- **Derrota**: Un Pokémon es debilitado cuando HP ≤ 0
-- **Cambio de Pokémon**: Automático cuando el activo es debilitado
-- **Final del combate**: Cuando todos los Pokémon de un equipo están debilitados
-
-## 🎓 Objetivos de Aprendizaje
-
-Este proyecto demuestra:
-- ✅ Programación orientada a objetos en Python
-- ✅ Patrones de diseño (Strategy con agentes)
-- ✅ Integración con APIs externas (Pokémon Showdown)
-- ✅ Simulación y sistemas de turnos
-- ✅ Aplicación de fórmulas matemáticas en videojuegos
-- ✅ Entrada/salida por consola interactiva
-
-## 🚀 Futuras Mejoras
-
-- [ ] Interfaz gráfica (Tkinter/Pygame)
-- [ ] Más tipos de agentes (Redes neuronales, Minimax, Alpha-Beta pruning)
-- [ ] Sistema de tipos de Pokémon (efectividad)
-- [ ] Efectos de estado (paralizado, quemado, etc.)
-- [ ] Habilidades de Pokémon
-- [ ] Estrategias de cambio de Pokémon
-- [ ] Sistema de torneos
-
-## 📄 Licencia
-
-Este proyecto es educativo y usa datos de Pokémon Showdown bajo su respectiva licencia.
-
----
-
-**Autor**: Augusto, Fernando, Frank  
-**Fecha de creación**: 2025  
-**Versión**: 1.0
+Este es un proyecto educativo. Las mejoras y sugerencias son bienvenidas.

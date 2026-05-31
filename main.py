@@ -2,6 +2,7 @@ import json
 import random
 from environment import Pokemon, Environment
 from agents import RandomAgent, BasicHeuristicAgent, HumanAgent, AdvancedHeuristicAgent, MinimaxAgent, TYPE_MULTIPLIERS
+from environment import TYPE_MULTIPLIERS  # <--- Ahora lo importa de aquí
 
 def load_team(filepath, num_pokemon=3):
     try:
@@ -120,10 +121,10 @@ if __name__ == "__main__":
 
 # Reemplaza estos valores con los que te arroje tu mega-entrenamiento
     pesos_evolucionados = {
-        'damage_score': 0.3294,
-        'speed_score': 0.2101,
-        'type_score': 0.1917,
-        'alive_score': 0.2689
+        'damage_score': 0.2888,
+        'speed_score': 0.2357,
+        'type_score': 0.2008,
+        'alive_score': 0.2747
     }
 
     # MINIMAX a Profundidad 3 armado con los Pesos Genéticos

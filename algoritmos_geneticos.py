@@ -3,6 +3,7 @@ import json
 import copy
 from environment import Pokemon, Environment
 from agents import BasicHeuristicAgent, AdvancedHeuristicAgent
+from environment import TYPE_MULTIPLIERS  # <--- Ahora lo importa de aquí
 
 # Parámetros del Algoritmo Genético "God Mode"
 POPULATION_SIZE = 50      # Más cerebros compitiendo

@@ -1,5 +1,6 @@
 import random
 import copy
+from environment import TYPE_MULTIPLIERS
 
 # Matriz simplificada de ventajas ofensivas de tipo
 TYPE_MULTIPLIERS = {

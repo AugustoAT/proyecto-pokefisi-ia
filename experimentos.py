@@ -6,6 +6,7 @@ import csv
 import time
 from environment import Pokemon, Environment
 from agents import RandomAgent, BasicHeuristicAgent, AdvancedHeuristicAgent, MinimaxAgent
+from environment import TYPE_MULTIPLIERS  # <--- Ahora lo importa de aquí
 
 # Parámetros del experimento
 COMBATES_POR_ESCENARIO = 100 # Suficiente validez estadística
@@ -73,7 +74,7 @@ if __name__ == "__main__":
     print("==================================================")
     
     # Usamos tus pesos evolucionados para el Nivel 3 y 4 (Reemplaza con los tuyos si los guardaste)
-    pesos_optimos = {'damage_score': 0.3294, 'speed_score': 0.2101, 'type_score': 0.1917, 'alive_score': 0.2689}
+    pesos_optimos = {'damage_score': 0.2888, 'speed_score': 0.2357, 'type_score': 0.2008, 'alive_score': 0.2747}
     
     resultados = []
     
