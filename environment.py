@@ -27,72 +27,87 @@ class Pokemon:
 
 class Environment:
     def __init__(self, team1, team2, k_factor=0.5):
-        """
-        Inicializa el entorno de combate.
-        team1 y team2 deben ser listas de objetos Pokemon (ej. 3 vs 3 o 4 vs 4).
-        """
         self.team1 = team1
         self.team2 = team2
-        self.k = k_factor # Factor de ajuste para la fórmula
-        
-        # Índices del Pokémon activo en el campo
+        self.k = k_factor
         self.active_idx_1 = 0
         self.active_idx_2 = 0
 
     def get_active_pokemon(self, player):
-        """Devuelve el Pokémon que está peleando actualmente."""
         if player == 1:
             return self.team1[self.active_idx_1]
         return self.team2[self.active_idx_2]
 
+    def get_valid_actions(self, player_id):
+        """Genera todas las acciones legales para un jugador: ataques y cambios."""
+        actions = []
+        active_pkmn = self.get_active_pokemon(player_id)
+        
+        # 1. Acciones de ataque (solo si tiene HP)
+        if not active_pkmn.is_fainted():
+            for i in range(len(active_pkmn.moves)):
+                actions.append(('attack', i))
+            
+        # 2. Acciones de cambio (hacia pokemon vivos en la banca)
+        team = self.team1 if player_id == 1 else self.team2
+        active_idx = self.active_idx_1 if player_id == 1 else self.active_idx_2
+        
+        for i, pkmn in enumerate(team):
+            if i != active_idx and not pkmn.is_fainted():
+                actions.append(('switch', i))
+                
+        return actions
+
     def calculate_damage(self, attacker, defender, move):
-        """
-        Aplica estrictamente la fórmula de la rúbrica:
-        Damage = (Attack / Defense_op) * BasePower - Speed_op * K
-        """
         base_power = move["power"]
-        
-        # Fórmula requerida por el profesor
         damage = (attacker.attack / defender.defense) * base_power - (defender.speed * self.k)
-        
-        # El daño no puede ser negativo ni menor a 1 si el ataque acierta
         return max(1, int(damage))
 
     def check_win_condition(self):
-        """El combate termina cuando todos los Pokémon de un jugador tienen HP = 0"""
         team1_fainted = all(p.is_fainted() for p in self.team1)
         team2_fainted = all(p.is_fainted() for p in self.team2)
         
-        if team1_fainted:
-            return 2 # Gana jugador 2
-        elif team2_fainted:
-            return 1 # Gana jugador 1
-        return 0 # El combate continúa
+        if team1_fainted: return 2
+        if team2_fainted: return 1
+        return 0
 
     def execute_turn(self, action_p1, action_p2):
-        """
-        Ejecuta un turno básico. 
-        Por ahora, action_p1 y action_p2 son los índices de los movimientos elegidos.
-        """
+        """Ejecuta el turno respetando la prioridad: Los cambios ocurren antes que los ataques."""
+        
+        # FASE 1: Resolución de Cambios (Switches)
+        if action_p1[0] == 'switch':
+            self.active_idx_1 = action_p1[1]
+        if action_p2[0] == 'switch':
+            self.active_idx_2 = action_p2[1]
+
+        # FASE 2: Resolución de Ataques
         pkmn1 = self.get_active_pokemon(1)
         pkmn2 = self.get_active_pokemon(2)
-        
-        move1 = pkmn1.moves[action_p1]
-        move2 = pkmn2.moves[action_p2]
 
-        # Determinar quién ataca primero por velocidad
-        if pkmn1.speed >= pkmn2.speed:
-            first, second = pkmn1, pkmn2
-            move_first, move_second = move1, move2
-        else:
-            first, second = pkmn2, pkmn1
-            move_first, move_second = move2, move1
+        is_atk_p1 = action_p1[0] == 'attack'
+        is_atk_p2 = action_p2[0] == 'attack'
 
-        # Turno del más rápido
-        dmg_first = self.calculate_damage(first, second, move_first)
-        second.take_damage(dmg_first)
+        # Ambos atacan: decide la velocidad
+        if is_atk_p1 and is_atk_p2:
+            if pkmn1.speed >= pkmn2.speed:
+                self._resolve_attack(1, pkmn1, pkmn2, action_p1[1])
+                if not pkmn2.is_fainted():
+                    self._resolve_attack(2, pkmn2, pkmn1, action_p2[1])
+            else:
+                self._resolve_attack(2, pkmn2, pkmn1, action_p2[1])
+                if not pkmn1.is_fainted():
+                    self._resolve_attack(1, pkmn1, pkmn2, action_p1[1])
+                    
+        # Solo P1 ataca (porque P2 cambió)
+        elif is_atk_p1 and not pkmn1.is_fainted():
+            self._resolve_attack(1, pkmn1, pkmn2, action_p1[1])
+            
+        # Solo P2 ataca (porque P1 cambió)
+        elif is_atk_p2 and not pkmn2.is_fainted():
+            self._resolve_attack(2, pkmn2, pkmn1, action_p2[1])
 
-        # Turno del más lento (solo ataca si no fue debilitado)
-        if not second.is_fainted():
-            dmg_second = self.calculate_damage(second, first, move_second)
-            first.take_damage(dmg_second)
+    def _resolve_attack(self, attacker_id, attacker, defender, move_idx):
+        """Función auxiliar para aplicar el daño."""
+        move = attacker.moves[move_idx]
+        dmg = self.calculate_damage(attacker, defender, move)
+        defender.take_damage(dmg)
