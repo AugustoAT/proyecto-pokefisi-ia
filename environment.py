@@ -60,7 +60,9 @@ class Environment:
 
     def calculate_damage(self, attacker, defender, move):
         base_power = move["power"]
-        damage = (attacker.attack / defender.defense) * base_power - (defender.speed * self.k)
+        # Dividimos la potencia de ataque entre 2.5 para que los combates duren más turnos
+        # y la estrategia (ventaja de tipos, minimax) realmente importe.
+        damage = ((attacker.attack / defender.defense) * (base_power / 2.5)) - (defender.speed * self.k)
         return max(1, int(damage))
 
     def check_win_condition(self):

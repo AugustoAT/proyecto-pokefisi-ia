@@ -9,11 +9,11 @@ MOVES_URL = "https://play.pokemonshowdown.com/data/moves.json"
 OUTPUT_FILE = 'data/pokemon_roster.json'
 
 TARGET_POKEMON = [
-    "bulbasaur", "ivysaur", "venusaur", "charmander", "charmeleon", "charizard",
-    "squirtle", "wartortle", "blastoise", "chikorita", "bayleef", "meganium",
-    "cyndaquil", "quilava", "typhlosion", "totodile", "croconaw", "feraligatr",
-    "treecko", "grovyle", "sceptile", "torchic", "combusken", "blaziken",
-    "mudkip", "marshtomp", "swampert", "pikachu", "gengar", "snorlax", "ralts", "gardevoir", "lucario", "kirlia", "umbreon"
+    "ivysaur", "venusaur", "charmeleon", "charizard", "machamp",
+    "wartortle", "blastoise", "bayleef", "meganium", "magneton", "electabuzz", "magmar",
+    "quilava", "typhlosion", "croconaw", "feraligatr", "magnezone", "electivire", "magmortar",
+    "grovyle", "sceptile", "combusken", "blaziken", "absol", "dragonite", "tyranitar", "garchomp",
+    "marshtomp", "swampert", "gengar", "snorlax", "gardevoir", "lucario", "kirlia", "umbreon"
 ]
 
 MOVES_PER_PKMN = 8

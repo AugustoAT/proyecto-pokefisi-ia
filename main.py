@@ -118,7 +118,15 @@ if __name__ == "__main__":
         else:
             print("❌ Opción no válida. Por favor, ingresa 1 o 2.")
 
-    # MINIMAX a Profundidad 3 con soporte de cambios
-    jugador2 = MinimaxAgent(player_id=2, depth=3)
+# Reemplaza estos valores con los que te arroje tu mega-entrenamiento
+    pesos_evolucionados = {
+        'damage_score': 0.3294,
+        'speed_score': 0.2101,
+        'type_score': 0.1917,
+        'alive_score': 0.2689
+    }
+
+    # MINIMAX a Profundidad 3 armado con los Pesos Genéticos
+    jugador2 = MinimaxAgent(player_id=2, depth=3, weights=pesos_evolucionados)
 
     run_battle(jugador1, jugador2, equipo1, equipo2, is_interactive=is_interactive)

@@ -36,19 +36,32 @@ class RandomAgent(Agent):
 
 class BasicHeuristicAgent(Agent):
     def choose_action(self, environment):
+        # Obtenemos las acciones válidas (ataques y cambios)
+        valid_actions = environment.get_valid_actions(self.player_id)
+        attacks = [a for a in valid_actions if a[0] == 'attack']
+        
+        # ¡LA CURA AL BUCLE INFINITO!
+        # Si el Pokémon está debilitado, no habrá ataques válidos.
+        # Obligamos al agente a tomar la primera opción de cambio disponible.
+        if not attacks:
+            return valid_actions[0] 
+            
         my_pkmn = environment.get_active_pokemon(self.player_id)
         opp_id = 2 if self.player_id == 1 else 1
         opp_pkmn = environment.get_active_pokemon(opp_id)
+        
         best_move_idx = 0
         max_damage = -1
         
-        print(f"\n[🧠 Nivel 2 Evaluando] Turno de {my_pkmn.name}")
-        for i, move in enumerate(my_pkmn.moves):
+        # Evalúa solo los ataques disponibles
+        for a in attacks:
+            i = a[1]
+            move = my_pkmn.moves[i]
             predicted_damage = environment.calculate_damage(my_pkmn, opp_pkmn, move)
-            print(f"  -> {move['name']}: {predicted_damage} de daño proyectado.")
             if predicted_damage > max_damage:
                 max_damage = predicted_damage
                 best_move_idx = i
+                
         return ('attack', best_move_idx)
 
 class HumanAgent(Agent):
