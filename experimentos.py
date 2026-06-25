@@ -4,9 +4,12 @@ import sys
 import os
 import csv
 import time
+import matplotlib.pyplot as plt
+import numpy as np
+
 from environment import Pokemon, Environment
 from agents import RandomAgent, BasicHeuristicAgent, AdvancedHeuristicAgent, MinimaxAgent
-from environment import TYPE_MULTIPLIERS  # <--- Ahora lo importa de aquí
+from environment import TYPE_MULTIPLIERS  # Importado correctamente del entorno
 
 # Parámetros del experimento
 COMBATES_POR_ESCENARIO = 100 # Suficiente validez estadística
@@ -68,13 +71,64 @@ def ejecutar_escenario(nombre, agente1, agente2):
     print(f"✅ Completado en {tiempo_exec:.2f} segundos.")
     return [nombre, win_rate_j1, win_rate_j2, avg_turnos, tiempo_exec]
 
+def generar_grafico_resultados(resultados):
+    """Genera un gráfico profesional con barras para Win Rate y líneas para Turnos."""
+    print("\n📊 Generando visualización de datos...")
+    
+    nombres = ['L1(Aleat) vs L2(Greedy)', 'L2(Greedy) vs L3(Avanz)', 'L3(Avanz) vs L4(Minimax)']
+    win_j1 = [r[1] for r in resultados]
+    win_j2 = [r[2] for r in resultados]
+    turnos = [r[3] for r in resultados]
+
+    x = np.arange(len(nombres))
+    width = 0.35
+
+    fig, ax1 = plt.subplots(figsize=(10, 6))
+
+    # Barras de Win Rate
+    bar1 = ax1.bar(x - width/2, win_j1, width, label='Victoria Jugador 1 (%)', color='#ff6b6b')
+    bar2 = ax1.bar(x + width/2, win_j2, width, label='Victoria Jugador 2 (IA Superior) (%)', color='#4ecdc4')
+
+    ax1.set_ylabel('Win Rate (%)', fontweight='bold')
+    ax1.set_title('Rendimiento Comparativo de Agentes en Pokefisi', fontsize=14, fontweight='bold')
+    ax1.set_xticks(x)
+    ax1.set_xticklabels(nombres, fontsize=11)
+    ax1.legend(loc='upper left')
+    ax1.set_ylim(0, 110)
+
+    # Añadir el número exacto sobre cada barra
+    ax1.bar_label(bar1, padding=3, fmt='%.1f%%')
+    ax1.bar_label(bar2, padding=3, fmt='%.1f%%')
+
+    # Línea de Turnos Promedio en un segundo eje Y
+    ax2 = ax1.twinx()
+    ax2.plot(x, turnos, color='#2d3436', marker='o', linestyle='dashed', linewidth=2, markersize=8, label='Turnos Promedio')
+    ax2.set_ylabel('Cantidad de Turnos Promedio', color='#2d3436', fontweight='bold')
+    ax2.tick_params(axis='y', labelcolor='#2d3436')
+    
+    # Ajustar dinámicamente el límite del eje Y para los turnos
+    ax2.set_ylim(0, max(turnos) + 5)
+    ax2.legend(loc='upper right')
+
+    fig.tight_layout()
+    
+    # Guardar gráfico
+    filename = "grafico_resultados.png"
+    plt.savefig(filename, dpi=300) # Alta resolución ideal para el paper LaTeX
+    print(f"🖼️ ¡Gráfico guardado exitosamente como '{filename}'!")
+
 if __name__ == "__main__":
     print("==================================================")
     print("📊 INICIANDO BATERÍA DE EXPERIMENTOS POKEFISI 📊")
     print("==================================================")
     
-    # Usamos tus pesos evolucionados para el Nivel 3 y 4 (Reemplaza con los tuyos si los guardaste)
-    pesos_optimos = {'damage_score': 0.2888, 'speed_score': 0.2357, 'type_score': 0.2008, 'alive_score': 0.2747}
+    # Tus pesos evolucionados actualizados
+    pesos_optimos = {
+        'damage_score': 0.3773, 
+        'speed_score': 0.2714, 
+        'type_score': 0.1357, 
+        'alive_score': 0.2156
+    }
     
     resultados = []
     
@@ -99,7 +153,7 @@ if __name__ == "__main__":
         MinimaxAgent(2, depth=2, weights=pesos_optimos)
     ))
     
-    # Guardar en CSV para tus gráficos de Excel
+    # Guardar en CSV para tus registros
     csv_filename = "resultados_experimentos.csv"
     with open(csv_filename, mode='w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
@@ -112,3 +166,6 @@ if __name__ == "__main__":
         print(f"\n{r[0]}:")
         print(f"  - Gana J1: {r[1]}% | Gana J2: {r[2]}%")
         print(f"  - Turnos promedio: {r[3]:.1f}")
+        
+    # Llamamos a la función que genera la imagen final
+    generar_grafico_resultados(resultados)

@@ -1,11 +1,12 @@
 import random
+import sys
 import json
 import copy
 from environment import Pokemon, Environment
 from agents import BasicHeuristicAgent, AdvancedHeuristicAgent
 from environment import TYPE_MULTIPLIERS  # <--- Ahora lo importa de aquí
 
-# Parámetros del Algoritmo Genético "God Mode"
+# Parámetros del Algoritmo Genético "Modo Dificil"
 POPULATION_SIZE = 50      # Más cerebros compitiendo
 GENERATIONS = 50          # Más tiempo para evolucionar
 GAMES_PER_INDIVIDUAL = 20 # Más partidas para asegurar que ganan por habilidad, no por suerte
@@ -106,8 +107,6 @@ def run_evolution(roster_path='data/pokemon_roster.json'):
     
     # 1. Crear Población Inicial
     population = [create_individual() for _ in range(POPULATION_SIZE)]
-    
-    import sys
     
     for generation in range(GENERATIONS):
         print(f"--- Entrenando Generación {generation + 1} ---")

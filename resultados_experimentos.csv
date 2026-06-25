@@ -1,4 +1,4 @@
 Escenario,Win Rate J1 (%),Win Rate J2 (%),Promedio Turnos,Tiempo (seg)
-Nivel 1 (Aleatorio) vs Nivel 2 (Básica),12.0,88.0,6.19,0.12204933166503906
-Nivel 2 (Básica) vs Nivel 3 (Avanzada),46.0,54.0,5.72,0.12529420852661133
-Nivel 3 (Avanzada) vs Nivel 4 (Minimax Prof 2),35.0,65.0,4.98,7.894043684005737
+Nivel 1 (Aleatorio) vs Nivel 2 (Básica),3.0,97.0,12.45,0.10115766525268555
+Nivel 2 (Básica) vs Nivel 3 (Avanzada),55.00000000000001,45.0,10.94,0.1644725799560547
+Nivel 3 (Avanzada) vs Nivel 4 (Minimax Prof 2),42.0,57.99999999999999,10.53,18.985721826553345

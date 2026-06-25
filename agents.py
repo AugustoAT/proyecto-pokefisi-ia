@@ -41,9 +41,6 @@ class BasicHeuristicAgent(Agent):
         valid_actions = environment.get_valid_actions(self.player_id)
         attacks = [a for a in valid_actions if a[0] == 'attack']
         
-        # ¡LA CURA AL BUCLE INFINITO!
-        # Si el Pokémon está debilitado, no habrá ataques válidos.
-        # Obligamos al agente a tomar la primera opción de cambio disponible.
         if not attacks:
             return valid_actions[0] 
             
@@ -114,10 +111,10 @@ class AdvancedHeuristicAgent(Agent):
     def __init__(self, player_id, weights=None):
         super().__init__(player_id)
         self.weights = weights if weights else {
-            'damage_score': 0.4,
-            'speed_score': 0.2,
-            'type_score': 0.2,
-            'alive_score': 0.2
+            'damage_score': 0.3773,
+            'speed_score': 0.2714,
+            'type_score': 0.1357,
+            'alive_score': 0.2156
         }
 
     def choose_action(self, environment):

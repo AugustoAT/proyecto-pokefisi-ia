@@ -47,7 +47,7 @@ class PokefisiGUI:
         self.env = Environment(team1, team2)
         
         # Insertamos tu IA definitiva aquí (Ajusta los pesos si lo deseas)
-        pesos = {'damage_score': 0.2888, 'speed_score': 0.2357, 'type_score': 0.2008, 'alive_score': 0.2747}
+        pesos = {'damage_score': 0.3773, 'speed_score': 0.2714, 'type_score': 0.1357, 'alive_score': 0.2156}
         self.ia_agent = MinimaxAgent(player_id=2, depth=3, weights=pesos)
 
     def create_widgets(self):
@@ -128,13 +128,11 @@ class PokefisiGUI:
                 self.btn_moves[i].config(text=f"{move['name']}\n({move['type']})", state=tk.NORMAL)
             self.btn_switch.config(state=tk.NORMAL)
         else:
-            # ¡LA CORRECCIÓN! 
-            # Si se debilita, apagamos los ataques pero ENCENDEMOS el relevo
             for btn in self.btn_moves: 
                 btn.config(state=tk.DISABLED)
             self.btn_switch.config(state=tk.NORMAL) 
             
-            self.log(f"¡{self.p1_active.name} se desmayó! Selecciona RELEVAR.")
+            self.log(f"¡{self.p1_active.name} se debilitó! Selecciona RELEVAR.")
 
     def open_switch_menu(self):
         """Abre una ventana emergente para elegir otro Pokémon"""
@@ -195,11 +193,11 @@ class PokefisiGUI:
         win = self.env.check_win_condition()
         if win == 1:
             self.log("¡HAS DERROTADO A LA IA MINIMAX!")
-            messagebox.showinfo("¡VICTORIA!", "¡Has derrotado al Algoritmo Minimax!")
+            messagebox.showinfo("¡VICTORIA!", "¡Has derrotado al Agente Minimax!")
             self.root.destroy()
         elif win == 2:
             self.log("La IA te ha aplastado...")
-            messagebox.showinfo("DERROTA", "El Algoritmo Minimax ha ganado la partida.")
+            messagebox.showinfo("DERROTA", "El Agente Minimax ha ganado la partida.")
             self.root.destroy()
         else:
             # Si el juego sigue, reactivamos la interfaz (update_ui lo hace automáticamente si el PKMN sigue vivo)

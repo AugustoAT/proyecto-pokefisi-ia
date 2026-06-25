@@ -70,7 +70,7 @@ class Environment:
         base_power = move["power"]
         
         # 1. Fórmula base requerida por la rúbrica
-        raw_damage = (attacker.attack / defender.defense) * base_power - (defender.speed * self.k)
+        raw_damage = (attacker.attack / defender.defense) * (base_power / 2.5) - (defender.speed * self.k)
         
         # Evitar daños negativos antes de aplicar tipos
         raw_damage = max(5, raw_damage) 

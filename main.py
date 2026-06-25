@@ -121,10 +121,10 @@ if __name__ == "__main__":
 
 # Reemplaza estos valores con los que te arroje tu mega-entrenamiento
     pesos_evolucionados = {
-        'damage_score': 0.2888,
-        'speed_score': 0.2357,
-        'type_score': 0.2008,
-        'alive_score': 0.2747
+        'damage_score': 0.3773,
+        'speed_score': 0.2714,
+        'type_score': 0.1357,
+        'alive_score': 0.2156
     }
 
     # MINIMAX a Profundidad 3 armado con los Pesos Genéticos

@@ -12,7 +12,7 @@ TARGET_POKEMON = [
     "ivysaur", "venusaur", "charmeleon", "charizard", "machamp",
     "wartortle", "blastoise", "bayleef", "meganium", "magneton", "electabuzz", "magmar",
     "quilava", "typhlosion", "croconaw", "feraligatr", "magnezone", "electivire", "magmortar",
-    "grovyle", "sceptile", "combusken", "blaziken", "absol", "dragonite", "tyranitar", "garchomp",
+    "grovyle", "sceptile", "combusken", "blaziken", "absol",
     "marshtomp", "swampert", "gengar", "snorlax", "gardevoir", "lucario", "kirlia", "umbreon"
 ]
 

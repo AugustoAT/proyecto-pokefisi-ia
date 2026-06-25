@@ -15,51 +15,51 @@
         },
         "moves": [
             {
-                "name": "Trop Kick",
-                "power": 70,
-                "type": "Grass",
-                "accuracy": 100
+                "name": "Dragon Rush",
+                "power": 100,
+                "type": "Dragon",
+                "accuracy": 75
             },
             {
-                "name": "Rapid Spin",
-                "power": 50,
+                "name": "Fake Out",
+                "power": 40,
                 "type": "Normal",
                 "accuracy": 100
             },
             {
-                "name": "Icicle Spear",
-                "power": 25,
-                "type": "Ice",
+                "name": "Scorching Sands",
+                "power": 70,
+                "type": "Ground",
                 "accuracy": 100
             },
             {
-                "name": "Hidden Power Grass",
-                "power": 60,
-                "type": "Grass",
-                "accuracy": 100
+                "name": "Metal Claw",
+                "power": 50,
+                "type": "Steel",
+                "accuracy": 95
             },
             {
-                "name": "Esper Wing",
-                "power": 80,
-                "type": "Psychic",
-                "accuracy": 100
+                "name": "Thunder Fang",
+                "power": 65,
+                "type": "Electric",
+                "accuracy": 95
             },
             {
-                "name": "Dragon Tail",
-                "power": 60,
-                "type": "Dragon",
+                "name": "Hydro Vortex",
+                "power": 1,
+                "type": "Water",
+                "accuracy": true
+            },
+            {
+                "name": "Giga Impact",
+                "power": 150,
+                "type": "Normal",
                 "accuracy": 90
             },
             {
-                "name": "Triple Arrows",
-                "power": 90,
-                "type": "Fighting",
-                "accuracy": 100
-            },
-            {
-                "name": "Catastropika",
-                "power": 210,
-                "type": "Electric",
+                "name": "Oceanic Operetta",
+                "power": 195,
+                "type": "Water",
                 "accuracy": true
             }
         ]
@@ -80,52 +80,52 @@
         },
         "moves": [
             {
-                "name": "Liquidation",
-                "power": 85,
+                "name": "Sacred Fire",
+                "power": 100,
+                "type": "Fire",
+                "accuracy": 95
+            },
+            {
+                "name": "Scald",
+                "power": 80,
                 "type": "Water",
                 "accuracy": 100
             },
             {
-                "name": "Body Press",
-                "power": 80,
-                "type": "Fighting",
-                "accuracy": 100
-            },
-            {
-                "name": "Wicked Blow",
-                "power": 75,
-                "type": "Dark",
-                "accuracy": 100
-            },
-            {
-                "name": "Behemoth Blade",
-                "power": 100,
-                "type": "Steel",
-                "accuracy": 100
-            },
-            {
-                "name": "Thousand Arrows",
-                "power": 90,
-                "type": "Ground",
-                "accuracy": 100
-            },
-            {
-                "name": "Avalanche",
-                "power": 60,
-                "type": "Ice",
-                "accuracy": 100
-            },
-            {
-                "name": "Dark Pulse",
-                "power": 80,
-                "type": "Dark",
-                "accuracy": 100
-            },
-            {
-                "name": "G-Max Sandblast",
+                "name": "Max Overgrowth",
                 "power": 10,
-                "type": "Ground",
+                "type": "Grass",
                 "accuracy": true
+            },
+            {
+                "name": "Double Shock",
+                "power": 120,
+                "type": "Electric",
+                "accuracy": 100
+            },
+            {
+                "name": "Flame Burst",
+                "power": 70,
+                "type": "Fire",
+                "accuracy": 100
+            },
+            {
+                "name": "Savage Spin-Out",
+                "power": 1,
+                "type": "Bug",
+                "accuracy": true
+            },
+            {
+                "name": "Soul-Stealing 7-Star Strike",
+                "power": 195,
+                "type": "Ghost",
+                "accuracy": true
+            },
+            {
+                "name": "Fell Stinger",
+                "power": 50,
+                "type": "Bug",
+                "accuracy": 100
             }
         ]
     },
@@ -144,52 +144,52 @@
         },
         "moves": [
             {
-                "name": "Max Overgrowth",
-                "power": 10,
+                "name": "Solar Beam",
+                "power": 120,
                 "type": "Grass",
-                "accuracy": true
+                "accuracy": 100
             },
             {
-                "name": "Hidden Power Dragon",
+                "name": "Buzzy Buzz",
                 "power": 60,
-                "type": "Dragon",
+                "type": "Electric",
                 "accuracy": 100
             },
             {
-                "name": "G-Max Replenish",
-                "power": 10,
-                "type": "Normal",
-                "accuracy": true
-            },
-            {
-                "name": "Secret Sword",
-                "power": 85,
-                "type": "Fighting",
+                "name": "Snap Trap",
+                "power": 35,
+                "type": "Grass",
                 "accuracy": 100
             },
             {
-                "name": "G-Max Malodor",
-                "power": 10,
-                "type": "Poison",
-                "accuracy": true
-            },
-            {
-                "name": "Jaw Lock",
-                "power": 80,
-                "type": "Dark",
+                "name": "Bouncy Bubble",
+                "power": 60,
+                "type": "Water",
                 "accuracy": 100
             },
             {
-                "name": "Body Press",
-                "power": 80,
-                "type": "Fighting",
+                "name": "Stone Edge",
+                "power": 100,
+                "type": "Rock",
+                "accuracy": 80
+            },
+            {
+                "name": "Double Iron Bash",
+                "power": 60,
+                "type": "Steel",
                 "accuracy": 100
             },
             {
-                "name": "Freeze-Dry",
-                "power": 70,
+                "name": "Ice Fang",
+                "power": 65,
                 "type": "Ice",
-                "accuracy": 100
+                "accuracy": 95
+            },
+            {
+                "name": "Gunk Shot",
+                "power": 120,
+                "type": "Poison",
+                "accuracy": 80
             }
         ]
     },
@@ -209,51 +209,51 @@
         },
         "moves": [
             {
-                "name": "Hyperspace Hole",
-                "power": 80,
-                "type": "Psychic",
-                "accuracy": true
-            },
-            {
-                "name": "Razor Leaf",
-                "power": 55,
+                "name": "Frenzy Plant",
+                "power": 150,
                 "type": "Grass",
-                "accuracy": 95
+                "accuracy": 90
             },
             {
-                "name": "Solar Beam",
-                "power": 120,
-                "type": "Grass",
-                "accuracy": 100
-            },
-            {
-                "name": "Max Knuckle",
+                "name": "G-Max Wildfire",
                 "power": 10,
-                "type": "Fighting",
+                "type": "Fire",
                 "accuracy": true
             },
             {
-                "name": "G-Max Hydrosnipe",
-                "power": 160,
+                "name": "Waterfall",
+                "power": 80,
                 "type": "Water",
-                "accuracy": true
-            },
-            {
-                "name": "Chip Away",
-                "power": 70,
-                "type": "Normal",
                 "accuracy": 100
             },
             {
-                "name": "Fury Attack",
-                "power": 15,
-                "type": "Normal",
-                "accuracy": 85
+                "name": "Glaive Rush",
+                "power": 120,
+                "type": "Dragon",
+                "accuracy": 100
             },
             {
-                "name": "Dig",
-                "power": 80,
-                "type": "Ground",
+                "name": "G-Max Wind Rage",
+                "power": 10,
+                "type": "Flying",
+                "accuracy": true
+            },
+            {
+                "name": "Shock Wave",
+                "power": 60,
+                "type": "Electric",
+                "accuracy": true
+            },
+            {
+                "name": "Aqua Tail",
+                "power": 90,
+                "type": "Water",
+                "accuracy": 90
+            },
+            {
+                "name": "Ice Shard",
+                "power": 40,
+                "type": "Ice",
                 "accuracy": 100
             }
         ]
@@ -273,52 +273,52 @@
         },
         "moves": [
             {
-                "name": "Poison Jab",
-                "power": 80,
-                "type": "Poison",
-                "accuracy": 100
-            },
-            {
-                "name": "Hydro Cannon",
-                "power": 150,
-                "type": "Water",
-                "accuracy": 90
-            },
-            {
-                "name": "Giga Impact",
-                "power": 150,
-                "type": "Normal",
-                "accuracy": 90
-            },
-            {
-                "name": "G-Max One Blow",
-                "power": 10,
-                "type": "Dark",
-                "accuracy": true
-            },
-            {
-                "name": "Megahorn",
-                "power": 120,
-                "type": "Bug",
-                "accuracy": 85
-            },
-            {
-                "name": "Comet Punch",
-                "power": 18,
-                "type": "Normal",
-                "accuracy": 85
-            },
-            {
-                "name": "Fiery Dance",
-                "power": 80,
+                "name": "Hidden Power Fire",
+                "power": 60,
                 "type": "Fire",
                 "accuracy": 100
             },
             {
-                "name": "Power Gem",
-                "power": 80,
-                "type": "Rock",
+                "name": "Subzero Slammer",
+                "power": 1,
+                "type": "Ice",
+                "accuracy": true
+            },
+            {
+                "name": "Draco Meteor",
+                "power": 130,
+                "type": "Dragon",
+                "accuracy": 90
+            },
+            {
+                "name": "Acid Spray",
+                "power": 40,
+                "type": "Poison",
                 "accuracy": 100
+            },
+            {
+                "name": "Sandsear Storm",
+                "power": 100,
+                "type": "Ground",
+                "accuracy": 80
+            },
+            {
+                "name": "Dynamic Punch",
+                "power": 100,
+                "type": "Fighting",
+                "accuracy": 50
+            },
+            {
+                "name": "Aura Sphere",
+                "power": 80,
+                "type": "Fighting",
+                "accuracy": true
+            },
+            {
+                "name": "Metal Claw",
+                "power": 50,
+                "type": "Steel",
+                "accuracy": 95
             }
         ]
     },
@@ -337,52 +337,52 @@
         },
         "moves": [
             {
-                "name": "Sky Attack",
-                "power": 140,
-                "type": "Flying",
-                "accuracy": 90
-            },
-            {
-                "name": "Freezy Frost",
-                "power": 100,
-                "type": "Ice",
-                "accuracy": 90
-            },
-            {
-                "name": "Pulverizing Pancake",
-                "power": 210,
-                "type": "Normal",
-                "accuracy": true
-            },
-            {
-                "name": "G-Max Befuddle",
-                "power": 10,
-                "type": "Bug",
-                "accuracy": true
-            },
-            {
-                "name": "Thunderclap",
+                "name": "Trop Kick",
                 "power": 70,
-                "type": "Electric",
+                "type": "Grass",
                 "accuracy": 100
             },
             {
-                "name": "Max Mindstorm",
+                "name": "Mega Drain",
+                "power": 40,
+                "type": "Grass",
+                "accuracy": 100
+            },
+            {
+                "name": "Bubble Beam",
+                "power": 65,
+                "type": "Water",
+                "accuracy": 100
+            },
+            {
+                "name": "Mega Punch",
+                "power": 80,
+                "type": "Normal",
+                "accuracy": 85
+            },
+            {
+                "name": "G-Max Snooze",
                 "power": 10,
-                "type": "Psychic",
+                "type": "Dark",
                 "accuracy": true
             },
             {
-                "name": "Fell Stinger",
-                "power": 50,
-                "type": "Bug",
+                "name": "Menacing Moonraze Maelstrom",
+                "power": 200,
+                "type": "Ghost",
+                "accuracy": true
+            },
+            {
+                "name": "Shadow Force",
+                "power": 120,
+                "type": "Ghost",
                 "accuracy": 100
             },
             {
-                "name": "Headlong Rush",
-                "power": 120,
-                "type": "Ground",
-                "accuracy": 100
+                "name": "Magnet Bomb",
+                "power": 60,
+                "type": "Steel",
+                "accuracy": true
             }
         ]
     },
@@ -401,51 +401,51 @@
         },
         "moves": [
             {
-                "name": "Steel Beam",
-                "power": 140,
-                "type": "Steel",
-                "accuracy": 95
-            },
-            {
-                "name": "Disarming Voice",
-                "power": 40,
-                "type": "Fairy",
-                "accuracy": true
-            },
-            {
-                "name": "Bone Club",
-                "power": 65,
-                "type": "Ground",
+                "name": "Clamp",
+                "power": 35,
+                "type": "Water",
                 "accuracy": 85
             },
             {
-                "name": "Round",
-                "power": 60,
+                "name": "Fire Blast",
+                "power": 110,
+                "type": "Fire",
+                "accuracy": 85
+            },
+            {
+                "name": "Weather Ball",
+                "power": 50,
                 "type": "Normal",
                 "accuracy": 100
             },
             {
-                "name": "Bite",
-                "power": 60,
-                "type": "Dark",
-                "accuracy": 100
-            },
-            {
-                "name": "Aurora Beam",
-                "power": 65,
-                "type": "Ice",
-                "accuracy": 100
-            },
-            {
-                "name": "Rock Smash",
-                "power": 40,
+                "name": "Meteor Assault",
+                "power": 150,
                 "type": "Fighting",
                 "accuracy": 100
             },
             {
-                "name": "Freezing Glare",
-                "power": 90,
+                "name": "Apple Acid",
+                "power": 80,
+                "type": "Grass",
+                "accuracy": 100
+            },
+            {
+                "name": "Luster Purge",
+                "power": 95,
                 "type": "Psychic",
+                "accuracy": 100
+            },
+            {
+                "name": "Hydro Steam",
+                "power": 80,
+                "type": "Water",
+                "accuracy": 100
+            },
+            {
+                "name": "Splishy Splash",
+                "power": 90,
+                "type": "Water",
                 "accuracy": 100
             }
         ]
@@ -465,52 +465,52 @@
         },
         "moves": [
             {
-                "name": "Incinerate",
-                "power": 60,
-                "type": "Fire",
+                "name": "Facade",
+                "power": 70,
+                "type": "Normal",
                 "accuracy": 100
             },
             {
-                "name": "Hidden Power Fire",
-                "power": 60,
-                "type": "Fire",
-                "accuracy": 100
+                "name": "Bind",
+                "power": 15,
+                "type": "Normal",
+                "accuracy": 85
             },
             {
-                "name": "Shadow Sneak",
-                "power": 40,
+                "name": "Lick",
+                "power": 30,
                 "type": "Ghost",
                 "accuracy": 100
             },
             {
-                "name": "Thunder Shock",
-                "power": 40,
-                "type": "Electric",
-                "accuracy": 100
+                "name": "Savage Spin-Out",
+                "power": 1,
+                "type": "Bug",
+                "accuracy": true
             },
             {
-                "name": "Giga Drain",
-                "power": 75,
+                "name": "Petal Dance",
+                "power": 120,
                 "type": "Grass",
                 "accuracy": 100
             },
             {
-                "name": "Surf",
-                "power": 90,
-                "type": "Water",
-                "accuracy": 100
-            },
-            {
-                "name": "Rolling Kick",
-                "power": 60,
-                "type": "Fighting",
+                "name": "Power Whip",
+                "power": 120,
+                "type": "Grass",
                 "accuracy": 85
             },
             {
-                "name": "Liquidation",
-                "power": 85,
-                "type": "Water",
-                "accuracy": 100
+                "name": "Corkscrew Crash",
+                "power": 1,
+                "type": "Steel",
+                "accuracy": true
+            },
+            {
+                "name": "Hurricane",
+                "power": 110,
+                "type": "Flying",
+                "accuracy": 70
             }
         ]
     },
@@ -529,51 +529,51 @@
         },
         "moves": [
             {
-                "name": "Mystical Fire",
-                "power": 75,
-                "type": "Fire",
-                "accuracy": 100
+                "name": "Aqua Tail",
+                "power": 90,
+                "type": "Water",
+                "accuracy": 90
             },
             {
-                "name": "Struggle Bug",
-                "power": 50,
-                "type": "Bug",
-                "accuracy": 100
-            },
-            {
-                "name": "Gunk Shot",
-                "power": 120,
-                "type": "Poison",
-                "accuracy": 80
-            },
-            {
-                "name": "Retaliate",
-                "power": 70,
+                "name": "Razor Wind",
+                "power": 80,
                 "type": "Normal",
                 "accuracy": 100
             },
             {
-                "name": "G-Max Hydrosnipe",
-                "power": 160,
-                "type": "Water",
-                "accuracy": true
-            },
-            {
-                "name": "Aura Wheel",
-                "power": 110,
-                "type": "Electric",
+                "name": "False Swipe",
+                "power": 40,
+                "type": "Normal",
                 "accuracy": 100
             },
             {
-                "name": "Fury Attack",
+                "name": "Thrash",
+                "power": 120,
+                "type": "Normal",
+                "accuracy": 100
+            },
+            {
+                "name": "Wrap",
                 "power": 15,
                 "type": "Normal",
+                "accuracy": 90
+            },
+            {
+                "name": "Fire Spin",
+                "power": 35,
+                "type": "Fire",
                 "accuracy": 85
             },
             {
-                "name": "Water Spout",
-                "power": 150,
-                "type": "Water",
+                "name": "Submission",
+                "power": 80,
+                "type": "Fighting",
+                "accuracy": 80
+            },
+            {
+                "name": "Shadow Force",
+                "power": 120,
+                "type": "Ghost",
                 "accuracy": 100
             }
         ]
@@ -594,52 +594,52 @@
         },
         "moves": [
             {
-                "name": "Surf",
-                "power": 90,
-                "type": "Water",
-                "accuracy": 100
-            },
-            {
-                "name": "Water Gun",
-                "power": 40,
-                "type": "Water",
-                "accuracy": 100
-            },
-            {
-                "name": "Oblivion Wing",
-                "power": 80,
-                "type": "Flying",
-                "accuracy": 100
-            },
-            {
-                "name": "Hyper Voice",
-                "power": 90,
+                "name": "Techno Blast",
+                "power": 120,
                 "type": "Normal",
                 "accuracy": 100
             },
             {
-                "name": "Bolt Strike",
-                "power": 130,
-                "type": "Electric",
-                "accuracy": 85
-            },
-            {
-                "name": "Frenzy Plant",
-                "power": 150,
-                "type": "Grass",
-                "accuracy": 90
-            },
-            {
-                "name": "Triple Axel",
-                "power": 20,
-                "type": "Ice",
-                "accuracy": 90
-            },
-            {
-                "name": "Razor Shell",
+                "name": "Giga Drain",
                 "power": 75,
-                "type": "Water",
-                "accuracy": 95
+                "type": "Grass",
+                "accuracy": 100
+            },
+            {
+                "name": "Pluck",
+                "power": 60,
+                "type": "Flying",
+                "accuracy": 100
+            },
+            {
+                "name": "Synchronoise",
+                "power": 120,
+                "type": "Psychic",
+                "accuracy": 100
+            },
+            {
+                "name": "Crunch",
+                "power": 80,
+                "type": "Dark",
+                "accuracy": 100
+            },
+            {
+                "name": "Shadow Force",
+                "power": 120,
+                "type": "Ghost",
+                "accuracy": 100
+            },
+            {
+                "name": "Order Up",
+                "power": 80,
+                "type": "Dragon",
+                "accuracy": 100
+            },
+            {
+                "name": "Circle Throw",
+                "power": 60,
+                "type": "Fighting",
+                "accuracy": 90
             }
         ]
     },
@@ -658,51 +658,51 @@
         },
         "moves": [
             {
-                "name": "Techno Blast",
-                "power": 120,
+                "name": "Land's Wrath",
+                "power": 90,
+                "type": "Ground",
+                "accuracy": 100
+            },
+            {
+                "name": "G-Max Foam Burst",
+                "power": 10,
+                "type": "Water",
+                "accuracy": true
+            },
+            {
+                "name": "Hidden Power Water",
+                "power": 60,
+                "type": "Water",
+                "accuracy": 100
+            },
+            {
+                "name": "Max Airstream",
+                "power": 10,
+                "type": "Flying",
+                "accuracy": true
+            },
+            {
+                "name": "Supercell Slam",
+                "power": 100,
+                "type": "Electric",
+                "accuracy": 95
+            },
+            {
+                "name": "Pay Day",
+                "power": 40,
                 "type": "Normal",
                 "accuracy": 100
             },
             {
-                "name": "Misty Explosion",
-                "power": 100,
-                "type": "Fairy",
-                "accuracy": 100
-            },
-            {
-                "name": "Triple Kick",
-                "power": 10,
-                "type": "Fighting",
-                "accuracy": 90
-            },
-            {
-                "name": "Max Hailstorm",
-                "power": 10,
-                "type": "Ice",
-                "accuracy": true
-            },
-            {
-                "name": "Focus Blast",
-                "power": 120,
-                "type": "Fighting",
-                "accuracy": 70
-            },
-            {
-                "name": "Dark Pulse",
+                "name": "Lava Plume",
                 "power": 80,
-                "type": "Dark",
+                "type": "Fire",
                 "accuracy": 100
             },
             {
-                "name": "Sappy Seed",
+                "name": "Core Enforcer",
                 "power": 100,
-                "type": "Grass",
-                "accuracy": 90
-            },
-            {
-                "name": "Electro Drift",
-                "power": 100,
-                "type": "Electric",
+                "type": "Dragon",
                 "accuracy": 100
             }
         ]
@@ -722,52 +722,52 @@
         },
         "moves": [
             {
-                "name": "Snarl",
-                "power": 55,
-                "type": "Dark",
-                "accuracy": 95
-            },
-            {
-                "name": "Sludge Bomb",
-                "power": 90,
+                "name": "Hidden Power Poison",
+                "power": 60,
                 "type": "Poison",
                 "accuracy": 100
             },
             {
-                "name": "Thunder Cage",
-                "power": 80,
-                "type": "Electric",
-                "accuracy": 90
+                "name": "Skull Bash",
+                "power": 130,
+                "type": "Normal",
+                "accuracy": 100
             },
             {
-                "name": "Hidden Power Ice",
-                "power": 60,
+                "name": "G-Max Sweetness",
+                "power": 10,
+                "type": "Grass",
+                "accuracy": true
+            },
+            {
+                "name": "Mud Shot",
+                "power": 55,
+                "type": "Ground",
+                "accuracy": 95
+            },
+            {
+                "name": "G-Max Cannonade",
+                "power": 10,
+                "type": "Water",
+                "accuracy": true
+            },
+            {
+                "name": "X-Scissor",
+                "power": 80,
+                "type": "Bug",
+                "accuracy": 100
+            },
+            {
+                "name": "Powder Snow",
+                "power": 40,
                 "type": "Ice",
                 "accuracy": 100
             },
             {
-                "name": "Steel Beam",
-                "power": 140,
-                "type": "Steel",
-                "accuracy": 95
-            },
-            {
-                "name": "Gigavolt Havoc",
+                "name": "Bloom Doom",
                 "power": 1,
-                "type": "Electric",
+                "type": "Grass",
                 "accuracy": true
-            },
-            {
-                "name": "Flame Charge",
-                "power": 50,
-                "type": "Fire",
-                "accuracy": 100
-            },
-            {
-                "name": "Spirit Break",
-                "power": 75,
-                "type": "Fairy",
-                "accuracy": 100
             }
         ]
     },
@@ -786,52 +786,52 @@
         },
         "moves": [
             {
-                "name": "Double Iron Bash",
-                "power": 60,
-                "type": "Steel",
+                "name": "Accelerock",
+                "power": 40,
+                "type": "Rock",
                 "accuracy": 100
             },
             {
-                "name": "Metal Claw",
-                "power": 50,
-                "type": "Steel",
+                "name": "Megahorn",
+                "power": 120,
+                "type": "Bug",
+                "accuracy": 85
+            },
+            {
+                "name": "Pin Missile",
+                "power": 25,
+                "type": "Bug",
                 "accuracy": 95
             },
             {
-                "name": "Incinerate",
-                "power": 60,
+                "name": "Heat Wave",
+                "power": 95,
                 "type": "Fire",
-                "accuracy": 100
+                "accuracy": 90
             },
             {
-                "name": "Razor Wind",
-                "power": 80,
+                "name": "Slash",
+                "power": 70,
                 "type": "Normal",
                 "accuracy": 100
             },
             {
-                "name": "Fire Lash",
+                "name": "Dazzling Gleam",
                 "power": 80,
-                "type": "Fire",
+                "type": "Fairy",
                 "accuracy": 100
             },
             {
-                "name": "Tera Starstorm",
-                "power": 120,
-                "type": "Normal",
-                "accuracy": 100
+                "name": "Rock Blast",
+                "power": 25,
+                "type": "Rock",
+                "accuracy": 90
             },
             {
-                "name": "Strength",
-                "power": 80,
-                "type": "Normal",
+                "name": "Leaf Blade",
+                "power": 90,
+                "type": "Grass",
                 "accuracy": 100
-            },
-            {
-                "name": "Wildbolt Storm",
-                "power": 100,
-                "type": "Electric",
-                "accuracy": 80
             }
         ]
     },
@@ -850,21 +850,15 @@
         },
         "moves": [
             {
-                "name": "Clamp",
-                "power": 35,
-                "type": "Water",
-                "accuracy": 85
-            },
-            {
-                "name": "Ivy Cudgel",
-                "power": 100,
+                "name": "Leaf Blade",
+                "power": 90,
                 "type": "Grass",
                 "accuracy": 100
             },
             {
-                "name": "Max Geyser",
-                "power": 10,
-                "type": "Water",
+                "name": "Hyperspace Fury",
+                "power": 100,
+                "type": "Dark",
                 "accuracy": true
             },
             {
@@ -874,28 +868,34 @@
                 "accuracy": 70
             },
             {
-                "name": "Liquidation",
-                "power": 85,
-                "type": "Water",
+                "name": "Hidden Power Psychic",
+                "power": 60,
+                "type": "Psychic",
                 "accuracy": 100
             },
             {
-                "name": "Catastropika",
-                "power": 210,
-                "type": "Electric",
-                "accuracy": true
-            },
-            {
-                "name": "Dire Claw",
-                "power": 80,
-                "type": "Poison",
+                "name": "Earthquake",
+                "power": 100,
+                "type": "Ground",
                 "accuracy": 100
             },
             {
-                "name": "G-Max Wildfire",
-                "power": 10,
-                "type": "Fire",
-                "accuracy": true
+                "name": "Power-Up Punch",
+                "power": 40,
+                "type": "Fighting",
+                "accuracy": 100
+            },
+            {
+                "name": "Thrash",
+                "power": 120,
+                "type": "Normal",
+                "accuracy": 100
+            },
+            {
+                "name": "Upper Hand",
+                "power": 65,
+                "type": "Fighting",
+                "accuracy": 100
             }
         ]
     },
@@ -914,51 +914,51 @@
         },
         "moves": [
             {
-                "name": "Hidden Power Dragon",
+                "name": "Spirit Shackle",
+                "power": 80,
+                "type": "Ghost",
+                "accuracy": 100
+            },
+            {
+                "name": "Syrup Bomb",
                 "power": 60,
-                "type": "Dragon",
-                "accuracy": 100
+                "type": "Grass",
+                "accuracy": 85
             },
             {
-                "name": "Rage",
-                "power": 20,
+                "name": "Max Lightning",
+                "power": 10,
+                "type": "Electric",
+                "accuracy": true
+            },
+            {
+                "name": "Wrap",
+                "power": 15,
                 "type": "Normal",
-                "accuracy": 100
+                "accuracy": 90
             },
             {
-                "name": "Thunderbolt",
-                "power": 90,
-                "type": "Electric",
-                "accuracy": 100
-            },
-            {
-                "name": "Disarming Voice",
-                "power": 40,
-                "type": "Fairy",
-                "accuracy": true
-            },
-            {
-                "name": "Strange Steam",
-                "power": 90,
-                "type": "Fairy",
-                "accuracy": 95
-            },
-            {
-                "name": "Stoked Sparksurfer",
-                "power": 175,
-                "type": "Electric",
-                "accuracy": true
-            },
-            {
-                "name": "Glaive Rush",
-                "power": 120,
-                "type": "Dragon",
-                "accuracy": 100
-            },
-            {
-                "name": "Psychic Noise",
-                "power": 75,
+                "name": "Eerie Spell",
+                "power": 80,
                 "type": "Psychic",
+                "accuracy": 100
+            },
+            {
+                "name": "Crunch",
+                "power": 80,
+                "type": "Dark",
+                "accuracy": 100
+            },
+            {
+                "name": "G-Max Rapid Flow",
+                "power": 10,
+                "type": "Water",
+                "accuracy": true
+            },
+            {
+                "name": "Ice Beam",
+                "power": 90,
+                "type": "Ice",
                 "accuracy": 100
             }
         ]
@@ -978,52 +978,52 @@
         },
         "moves": [
             {
-                "name": "Seed Bomb",
-                "power": 80,
-                "type": "Grass",
-                "accuracy": 100
-            },
-            {
-                "name": "Triple Dive",
-                "power": 30,
-                "type": "Water",
-                "accuracy": 95
-            },
-            {
-                "name": "Signal Beam",
-                "power": 75,
-                "type": "Bug",
-                "accuracy": 100
-            },
-            {
-                "name": "Head Charge",
-                "power": 120,
+                "name": "Quick Attack",
+                "power": 40,
                 "type": "Normal",
                 "accuracy": 100
             },
             {
-                "name": "G-Max Volcalith",
-                "power": 10,
-                "type": "Rock",
-                "accuracy": true
+                "name": "Ice Burn",
+                "power": 140,
+                "type": "Ice",
+                "accuracy": 90
             },
             {
-                "name": "Aerial Ace",
-                "power": 60,
+                "name": "Oblivion Wing",
+                "power": 80,
                 "type": "Flying",
-                "accuracy": true
-            },
-            {
-                "name": "Bulldoze",
-                "power": 60,
-                "type": "Ground",
                 "accuracy": 100
             },
             {
-                "name": "Meteor Beam",
-                "power": 120,
-                "type": "Rock",
-                "accuracy": 90
+                "name": "Acid",
+                "power": 40,
+                "type": "Poison",
+                "accuracy": 100
+            },
+            {
+                "name": "Body Press",
+                "power": 80,
+                "type": "Fighting",
+                "accuracy": 100
+            },
+            {
+                "name": "Behemoth Blade",
+                "power": 100,
+                "type": "Steel",
+                "accuracy": 100
+            },
+            {
+                "name": "Tectonic Rage",
+                "power": 1,
+                "type": "Ground",
+                "accuracy": true
+            },
+            {
+                "name": "Mountain Gale",
+                "power": 100,
+                "type": "Ice",
+                "accuracy": 85
             }
         ]
     },
@@ -1043,51 +1043,51 @@
         },
         "moves": [
             {
-                "name": "Techno Blast",
-                "power": 120,
-                "type": "Normal",
+                "name": "Bite",
+                "power": 60,
+                "type": "Dark",
                 "accuracy": 100
             },
             {
-                "name": "Dragon Darts",
-                "power": 50,
-                "type": "Dragon",
-                "accuracy": 100
+                "name": "High Horsepower",
+                "power": 95,
+                "type": "Ground",
+                "accuracy": 95
             },
             {
-                "name": "Solar Blade",
-                "power": 125,
-                "type": "Grass",
-                "accuracy": 100
-            },
-            {
-                "name": "G-Max Befuddle",
+                "name": "Max Darkness",
                 "power": 10,
-                "type": "Bug",
+                "type": "Dark",
                 "accuracy": true
             },
             {
-                "name": "Power Whip",
-                "power": 120,
-                "type": "Grass",
-                "accuracy": 85
+                "name": "Rage Fist",
+                "power": 50,
+                "type": "Ghost",
+                "accuracy": 100
             },
             {
-                "name": "Burn Up",
-                "power": 130,
+                "name": "Zippy Zap",
+                "power": 80,
+                "type": "Electric",
+                "accuracy": 100
+            },
+            {
+                "name": "Inferno Overdrive",
+                "power": 1,
                 "type": "Fire",
+                "accuracy": true
+            },
+            {
+                "name": "Shell Side Arm",
+                "power": 90,
+                "type": "Poison",
                 "accuracy": 100
             },
             {
-                "name": "Mist Ball",
-                "power": 95,
+                "name": "Prismatic Laser",
+                "power": 160,
                 "type": "Psychic",
-                "accuracy": 100
-            },
-            {
-                "name": "Double Kick",
-                "power": 30,
-                "type": "Fighting",
                 "accuracy": 100
             }
         ]
@@ -1107,51 +1107,51 @@
         },
         "moves": [
             {
-                "name": "Dig",
-                "power": 80,
-                "type": "Ground",
-                "accuracy": 100
-            },
-            {
-                "name": "Freeze-Dry",
-                "power": 70,
-                "type": "Ice",
-                "accuracy": 100
-            },
-            {
-                "name": "Bite",
+                "name": "Flame Wheel",
                 "power": 60,
-                "type": "Dark",
-                "accuracy": 100
-            },
-            {
-                "name": "Ice Hammer",
-                "power": 100,
-                "type": "Ice",
-                "accuracy": 90
-            },
-            {
-                "name": "Pound",
-                "power": 40,
-                "type": "Normal",
-                "accuracy": 100
-            },
-            {
-                "name": "Bitter Blade",
-                "power": 90,
                 "type": "Fire",
                 "accuracy": 100
             },
             {
-                "name": "Hidden Power Bug",
-                "power": 60,
-                "type": "Bug",
+                "name": "Roar of Time",
+                "power": 150,
+                "type": "Dragon",
+                "accuracy": 90
+            },
+            {
+                "name": "G-Max Replenish",
+                "power": 10,
+                "type": "Normal",
+                "accuracy": true
+            },
+            {
+                "name": "Astral Barrage",
+                "power": 120,
+                "type": "Ghost",
                 "accuracy": 100
             },
             {
-                "name": "Mega Drain",
-                "power": 40,
+                "name": "Hyper Drill",
+                "power": 100,
+                "type": "Normal",
+                "accuracy": 100
+            },
+            {
+                "name": "Paleo Wave",
+                "power": 85,
+                "type": "Rock",
+                "accuracy": 100
+            },
+            {
+                "name": "Seed Bomb",
+                "power": 80,
                 "type": "Grass",
+                "accuracy": 100
+            },
+            {
+                "name": "Feint",
+                "power": 30,
+                "type": "Normal",
                 "accuracy": 100
             }
         ]
@@ -1171,51 +1171,51 @@
         },
         "moves": [
             {
-                "name": "Thrash",
-                "power": 120,
-                "type": "Normal",
-                "accuracy": 100
-            },
-            {
-                "name": "Max Quake",
-                "power": 10,
-                "type": "Ground",
-                "accuracy": true
-            },
-            {
-                "name": "Lunge",
-                "power": 80,
-                "type": "Bug",
-                "accuracy": 100
-            },
-            {
-                "name": "Bullet Seed",
-                "power": 25,
-                "type": "Grass",
-                "accuracy": 100
-            },
-            {
-                "name": "Sappy Seed",
-                "power": 100,
+                "name": "Frenzy Plant",
+                "power": 150,
                 "type": "Grass",
                 "accuracy": 90
             },
             {
-                "name": "Electroweb",
-                "power": 55,
-                "type": "Electric",
-                "accuracy": 95
+                "name": "Savage Spin-Out",
+                "power": 1,
+                "type": "Bug",
+                "accuracy": true
             },
             {
-                "name": "Bind",
-                "power": 15,
-                "type": "Normal",
-                "accuracy": 85
+                "name": "Flame Wheel",
+                "power": 60,
+                "type": "Fire",
+                "accuracy": 100
             },
             {
-                "name": "Raging Bull",
-                "power": 90,
-                "type": "Normal",
+                "name": "Venoshock",
+                "power": 65,
+                "type": "Poison",
+                "accuracy": 100
+            },
+            {
+                "name": "Extrasensory",
+                "power": 80,
+                "type": "Psychic",
+                "accuracy": 100
+            },
+            {
+                "name": "Signal Beam",
+                "power": 75,
+                "type": "Bug",
+                "accuracy": 100
+            },
+            {
+                "name": "Max Flutterby",
+                "power": 10,
+                "type": "Bug",
+                "accuracy": true
+            },
+            {
+                "name": "Mind Blown",
+                "power": 150,
+                "type": "Fire",
                 "accuracy": 100
             }
         ]
@@ -1235,52 +1235,52 @@
         },
         "moves": [
             {
-                "name": "Leaf Tornado",
-                "power": 65,
-                "type": "Grass",
-                "accuracy": 90
+                "name": "Expanding Force",
+                "power": 80,
+                "type": "Psychic",
+                "accuracy": 100
             },
             {
-                "name": "Skitter Smack",
-                "power": 70,
-                "type": "Bug",
-                "accuracy": 90
-            },
-            {
-                "name": "Covet",
-                "power": 60,
+                "name": "Pound",
+                "power": 40,
                 "type": "Normal",
                 "accuracy": 100
             },
             {
-                "name": "Moonblast",
-                "power": 95,
-                "type": "Fairy",
+                "name": "Shell Side Arm",
+                "power": 90,
+                "type": "Poison",
                 "accuracy": 100
             },
             {
-                "name": "Flame Charge",
-                "power": 50,
+                "name": "Revelation Dance",
+                "power": 90,
+                "type": "Normal",
+                "accuracy": 100
+            },
+            {
+                "name": "Blast Burn",
+                "power": 150,
                 "type": "Fire",
-                "accuracy": 100
-            },
-            {
-                "name": "Bulldoze",
-                "power": 60,
-                "type": "Ground",
-                "accuracy": 100
-            },
-            {
-                "name": "Collision Course",
-                "power": 100,
-                "type": "Fighting",
-                "accuracy": 100
-            },
-            {
-                "name": "Rollout",
-                "power": 30,
-                "type": "Rock",
                 "accuracy": 90
+            },
+            {
+                "name": "Hyper Beam",
+                "power": 150,
+                "type": "Normal",
+                "accuracy": 90
+            },
+            {
+                "name": "Continental Crush",
+                "power": 1,
+                "type": "Rock",
+                "accuracy": true
+            },
+            {
+                "name": "Tachyon Cutter",
+                "power": 50,
+                "type": "Steel",
+                "accuracy": true
             }
         ]
     },
@@ -1299,52 +1299,52 @@
         },
         "moves": [
             {
-                "name": "Fickle Beam",
-                "power": 80,
+                "name": "Glacial Lance",
+                "power": 120,
+                "type": "Ice",
+                "accuracy": 100
+            },
+            {
+                "name": "Take Down",
+                "power": 90,
+                "type": "Normal",
+                "accuracy": 85
+            },
+            {
+                "name": "Twinkle Tackle",
+                "power": 1,
+                "type": "Fairy",
+                "accuracy": true
+            },
+            {
+                "name": "Menacing Moonraze Maelstrom",
+                "power": 200,
+                "type": "Ghost",
+                "accuracy": true
+            },
+            {
+                "name": "Hidden Power Flying",
+                "power": 60,
+                "type": "Flying",
+                "accuracy": 100
+            },
+            {
+                "name": "Mud Bomb",
+                "power": 65,
+                "type": "Ground",
+                "accuracy": 85
+            },
+            {
+                "name": "Breaking Swipe",
+                "power": 60,
                 "type": "Dragon",
                 "accuracy": 100
             },
             {
-                "name": "Shell Trap",
-                "power": 150,
-                "type": "Fire",
-                "accuracy": 100
-            },
-            {
-                "name": "Thunder Fang",
-                "power": 65,
-                "type": "Electric",
-                "accuracy": 95
-            },
-            {
-                "name": "Mountain Gale",
-                "power": 100,
-                "type": "Ice",
-                "accuracy": 85
-            },
-            {
-                "name": "Mirror Shot",
-                "power": 65,
-                "type": "Steel",
-                "accuracy": 85
-            },
-            {
-                "name": "Matcha Gotcha",
+                "name": "Shadow Strike",
                 "power": 80,
-                "type": "Grass",
-                "accuracy": 90
-            },
-            {
-                "name": "Flame Charge",
-                "power": 50,
-                "type": "Fire",
-                "accuracy": 100
-            },
-            {
-                "name": "Smart Strike",
-                "power": 70,
-                "type": "Steel",
-                "accuracy": true
+                "type": "Ghost",
+                "accuracy": 95
             }
         ]
     },
@@ -1364,52 +1364,52 @@
         },
         "moves": [
             {
-                "name": "Thrash",
-                "power": 120,
-                "type": "Normal",
+                "name": "Hidden Power Psychic",
+                "power": 60,
+                "type": "Psychic",
                 "accuracy": 100
             },
             {
-                "name": "Constrict",
-                "power": 10,
-                "type": "Normal",
-                "accuracy": 100
-            },
-            {
-                "name": "Headlong Rush",
-                "power": 120,
+                "name": "Earthquake",
+                "power": 100,
                 "type": "Ground",
                 "accuracy": 100
             },
             {
-                "name": "Tectonic Rage",
-                "power": 1,
-                "type": "Ground",
-                "accuracy": true
-            },
-            {
-                "name": "G-Max Rapid Flow",
-                "power": 10,
-                "type": "Water",
-                "accuracy": true
-            },
-            {
-                "name": "Mega Punch",
-                "power": 80,
-                "type": "Normal",
-                "accuracy": 85
-            },
-            {
-                "name": "Flash Cannon",
-                "power": 80,
-                "type": "Steel",
+                "name": "Sludge Bomb",
+                "power": 90,
+                "type": "Poison",
                 "accuracy": 100
             },
             {
-                "name": "Drill Peck",
+                "name": "Slam",
                 "power": 80,
+                "type": "Normal",
+                "accuracy": 75
+            },
+            {
+                "name": "Struggle Bug",
+                "power": 50,
+                "type": "Bug",
+                "accuracy": 100
+            },
+            {
+                "name": "Icicle Crash",
+                "power": 85,
+                "type": "Ice",
+                "accuracy": 90
+            },
+            {
+                "name": "Max Airstream",
+                "power": 10,
                 "type": "Flying",
-                "accuracy": 100
+                "accuracy": true
+            },
+            {
+                "name": "Power Whip",
+                "power": 120,
+                "type": "Grass",
+                "accuracy": 85
             }
         ]
     },
@@ -1429,51 +1429,51 @@
         },
         "moves": [
             {
-                "name": "Hidden Power Poison",
-                "power": 60,
-                "type": "Poison",
-                "accuracy": 100
-            },
-            {
-                "name": "Leafage",
-                "power": 40,
-                "type": "Grass",
-                "accuracy": 100
-            },
-            {
-                "name": "Secret Sword",
-                "power": 85,
-                "type": "Fighting",
-                "accuracy": 100
-            },
-            {
-                "name": "Draco Meteor",
-                "power": 130,
-                "type": "Dragon",
-                "accuracy": 90
-            },
-            {
-                "name": "Power Gem",
-                "power": 80,
+                "name": "Diamond Storm",
+                "power": 100,
                 "type": "Rock",
-                "accuracy": 100
+                "accuracy": 95
             },
             {
-                "name": "Bone Rush",
-                "power": 25,
-                "type": "Ground",
-                "accuracy": 90
-            },
-            {
-                "name": "Raging Fury",
-                "power": 120,
+                "name": "Hidden Power Fire",
+                "power": 60,
                 "type": "Fire",
                 "accuracy": 100
             },
             {
-                "name": "Superpower",
-                "power": 120,
-                "type": "Fighting",
+                "name": "Aeroblast",
+                "power": 100,
+                "type": "Flying",
+                "accuracy": 95
+            },
+            {
+                "name": "Double Hit",
+                "power": 35,
+                "type": "Normal",
+                "accuracy": 90
+            },
+            {
+                "name": "Grass Pledge",
+                "power": 80,
+                "type": "Grass",
+                "accuracy": 100
+            },
+            {
+                "name": "Sparkling Aria",
+                "power": 90,
+                "type": "Water",
+                "accuracy": 100
+            },
+            {
+                "name": "Foul Play",
+                "power": 95,
+                "type": "Dark",
+                "accuracy": 100
+            },
+            {
+                "name": "Assurance",
+                "power": 60,
+                "type": "Dark",
                 "accuracy": 100
             }
         ]
@@ -1493,246 +1493,51 @@
         },
         "moves": [
             {
-                "name": "Revelation Dance",
-                "power": 90,
-                "type": "Normal",
-                "accuracy": 100
-            },
-            {
-                "name": "Rock Blast",
-                "power": 25,
-                "type": "Rock",
-                "accuracy": 90
-            },
-            {
-                "name": "Behemoth Blade",
-                "power": 100,
-                "type": "Steel",
-                "accuracy": 100
-            },
-            {
-                "name": "Flying Press",
-                "power": 100,
-                "type": "Fighting",
-                "accuracy": 95
-            },
-            {
-                "name": "Clear Smog",
-                "power": 50,
-                "type": "Poison",
-                "accuracy": true
-            },
-            {
-                "name": "Head Smash",
-                "power": 150,
-                "type": "Rock",
-                "accuracy": 80
-            },
-            {
-                "name": "Fire Pledge",
-                "power": 80,
-                "type": "Fire",
-                "accuracy": 100
-            },
-            {
-                "name": "Dragon Darts",
-                "power": 50,
-                "type": "Dragon",
-                "accuracy": 100
-            }
-        ]
-    },
-    "dragonite": {
-        "id": 149,
-        "types": [
-            "Dragon",
-            "Flying"
-        ],
-        "stats": {
-            "hp": 91,
-            "atk": 134,
-            "def": 95,
-            "spa": 100,
-            "spd": 100,
-            "spe": 80
-        },
-        "moves": [
-            {
-                "name": "Smack Down",
-                "power": 50,
-                "type": "Rock",
-                "accuracy": 100
-            },
-            {
-                "name": "Rising Voltage",
-                "power": 70,
-                "type": "Electric",
-                "accuracy": 100
-            },
-            {
-                "name": "Stored Power",
-                "power": 20,
-                "type": "Psychic",
-                "accuracy": 100
-            },
-            {
-                "name": "Arm Thrust",
-                "power": 15,
-                "type": "Fighting",
-                "accuracy": 100
-            },
-            {
-                "name": "Zen Headbutt",
-                "power": 80,
-                "type": "Psychic",
-                "accuracy": 90
-            },
-            {
-                "name": "Brine",
-                "power": 65,
-                "type": "Water",
-                "accuracy": 100
-            },
-            {
                 "name": "Poison Sting",
                 "power": 15,
                 "type": "Poison",
                 "accuracy": 100
             },
             {
-                "name": "Razor Leaf",
+                "name": "Weather Ball",
+                "power": 50,
+                "type": "Normal",
+                "accuracy": 100
+            },
+            {
+                "name": "Triple Kick",
+                "power": 10,
+                "type": "Fighting",
+                "accuracy": 90
+            },
+            {
+                "name": "Grassy Glide",
                 "power": 55,
                 "type": "Grass",
-                "accuracy": 95
-            }
-        ]
-    },
-    "tyranitar": {
-        "id": 248,
-        "types": [
-            "Rock",
-            "Dark"
-        ],
-        "stats": {
-            "hp": 100,
-            "atk": 134,
-            "def": 110,
-            "spa": 95,
-            "spd": 100,
-            "spe": 61
-        },
-        "moves": [
-            {
-                "name": "Dream Eater",
-                "power": 100,
-                "type": "Psychic",
                 "accuracy": 100
             },
             {
-                "name": "Leaf Blade",
+                "name": "Energy Ball",
                 "power": 90,
                 "type": "Grass",
                 "accuracy": 100
             },
             {
-                "name": "Tera Starstorm",
-                "power": 120,
-                "type": "Normal",
-                "accuracy": 100
-            },
-            {
-                "name": "Fiery Wrath",
-                "power": 90,
-                "type": "Dark",
-                "accuracy": 100
-            },
-            {
-                "name": "Torch Song",
-                "power": 80,
-                "type": "Fire",
-                "accuracy": 100
-            },
-            {
-                "name": "Superpower",
-                "power": 120,
-                "type": "Fighting",
-                "accuracy": 100
-            },
-            {
-                "name": "Double Hit",
-                "power": 35,
-                "type": "Normal",
-                "accuracy": 90
-            },
-            {
-                "name": "Axe Kick",
-                "power": 120,
-                "type": "Fighting",
-                "accuracy": 90
-            }
-        ]
-    },
-    "garchomp": {
-        "id": 445,
-        "types": [
-            "Dragon",
-            "Ground"
-        ],
-        "stats": {
-            "hp": 108,
-            "atk": 130,
-            "def": 95,
-            "spa": 80,
-            "spd": 85,
-            "spe": 102
-        },
-        "moves": [
-            {
-                "name": "Hidden Power Dark",
-                "power": 60,
-                "type": "Dark",
-                "accuracy": 100
-            },
-            {
-                "name": "X-Scissor",
-                "power": 80,
-                "type": "Bug",
-                "accuracy": 100
-            },
-            {
-                "name": "Rising Voltage",
-                "power": 70,
-                "type": "Electric",
-                "accuracy": 100
-            },
-            {
-                "name": "Freezy Frost",
-                "power": 100,
-                "type": "Ice",
-                "accuracy": 90
-            },
-            {
-                "name": "Fusion Flare",
+                "name": "Max Flare",
                 "power": 100,
                 "type": "Fire",
+                "accuracy": true
+            },
+            {
+                "name": "Fishious Rend",
+                "power": 85,
+                "type": "Water",
                 "accuracy": 100
             },
             {
-                "name": "Precipice Blades",
-                "power": 120,
-                "type": "Ground",
-                "accuracy": 85
-            },
-            {
-                "name": "Stone Edge",
-                "power": 100,
-                "type": "Rock",
-                "accuracy": 80
-            },
-            {
-                "name": "Electro Shot",
-                "power": 130,
-                "type": "Electric",
+                "name": "Tera Blast",
+                "power": 80,
+                "type": "Normal",
                 "accuracy": 100
             }
         ]
@@ -1753,51 +1558,51 @@
         },
         "moves": [
             {
-                "name": "Wing Attack",
-                "power": 60,
-                "type": "Flying",
-                "accuracy": 100
-            },
-            {
-                "name": "Frost Breath",
-                "power": 60,
-                "type": "Ice",
-                "accuracy": 90
-            },
-            {
-                "name": "Swift",
-                "power": 60,
-                "type": "Normal",
-                "accuracy": true
-            },
-            {
-                "name": "Triple Dive",
-                "power": 30,
-                "type": "Water",
-                "accuracy": 95
-            },
-            {
-                "name": "Water Pulse",
-                "power": 60,
-                "type": "Water",
-                "accuracy": 100
-            },
-            {
                 "name": "G-Max Finale",
                 "power": 10,
                 "type": "Fairy",
                 "accuracy": true
             },
             {
-                "name": "Pulverizing Pancake",
-                "power": 210,
-                "type": "Normal",
+                "name": "Freezy Frost",
+                "power": 100,
+                "type": "Ice",
+                "accuracy": 90
+            },
+            {
+                "name": "Ice Beam",
+                "power": 90,
+                "type": "Ice",
+                "accuracy": 100
+            },
+            {
+                "name": "Submission",
+                "power": 80,
+                "type": "Fighting",
+                "accuracy": 80
+            },
+            {
+                "name": "G-Max Wildfire",
+                "power": 10,
+                "type": "Fire",
                 "accuracy": true
             },
             {
-                "name": "Self-Destruct",
-                "power": 200,
-                "type": "Normal",
+                "name": "Hydro Vortex",
+                "power": 1,
+                "type": "Water",
+                "accuracy": true
+            },
+            {
+                "name": "Zing Zap",
+                "power": 80,
+                "type": "Electric",
+                "accuracy": 100
+            },
+            {
+                "name": "Sparkling Aria",
+                "power": 90,
+                "type": "Water",
                 "accuracy": 100
             }
         ]
@@ -1818,51 +1623,51 @@
         },
         "moves": [
             {
-                "name": "Sky Drop",
-                "power": 60,
-                "type": "Flying",
+                "name": "Double Shock",
+                "power": 120,
+                "type": "Electric",
                 "accuracy": 100
             },
             {
-                "name": "Night Daze",
-                "power": 85,
-                "type": "Dark",
-                "accuracy": 95
-            },
-            {
-                "name": "Aqua Cutter",
-                "power": 70,
-                "type": "Water",
-                "accuracy": 100
-            },
-            {
-                "name": "Body Press",
-                "power": 80,
-                "type": "Fighting",
-                "accuracy": 100
-            },
-            {
-                "name": "G-Max Befuddle",
+                "name": "Max Ooze",
                 "power": 10,
-                "type": "Bug",
+                "type": "Poison",
                 "accuracy": true
             },
             {
-                "name": "Skull Bash",
-                "power": 130,
-                "type": "Normal",
-                "accuracy": 100
-            },
-            {
-                "name": "Attack Order",
-                "power": 90,
-                "type": "Bug",
-                "accuracy": 100
-            },
-            {
-                "name": "Torch Song",
-                "power": 80,
+                "name": "Magma Storm",
+                "power": 100,
                 "type": "Fire",
+                "accuracy": 75
+            },
+            {
+                "name": "Bullet Punch",
+                "power": 40,
+                "type": "Steel",
+                "accuracy": 100
+            },
+            {
+                "name": "Barrage",
+                "power": 15,
+                "type": "Normal",
+                "accuracy": 85
+            },
+            {
+                "name": "Future Sight",
+                "power": 120,
+                "type": "Psychic",
+                "accuracy": 100
+            },
+            {
+                "name": "Bitter Malice",
+                "power": 75,
+                "type": "Ghost",
+                "accuracy": 100
+            },
+            {
+                "name": "Night Slash",
+                "power": 70,
+                "type": "Dark",
                 "accuracy": 100
             }
         ]
@@ -1883,52 +1688,52 @@
         },
         "moves": [
             {
-                "name": "Head Charge",
-                "power": 120,
+                "name": "Force Palm",
+                "power": 60,
+                "type": "Fighting",
+                "accuracy": 100
+            },
+            {
+                "name": "Signal Beam",
+                "power": 75,
+                "type": "Bug",
+                "accuracy": 100
+            },
+            {
+                "name": "Round",
+                "power": 60,
                 "type": "Normal",
                 "accuracy": 100
             },
             {
-                "name": "Waterfall",
-                "power": 80,
+                "name": "Hammer Arm",
+                "power": 100,
+                "type": "Fighting",
+                "accuracy": 90
+            },
+            {
+                "name": "Twineedle",
+                "power": 25,
+                "type": "Bug",
+                "accuracy": 100
+            },
+            {
+                "name": "Noxious Torque",
+                "power": 100,
+                "type": "Poison",
+                "accuracy": 100
+            },
+            {
+                "name": "Spectral Thief",
+                "power": 90,
+                "type": "Ghost",
+                "accuracy": 100
+            },
+            {
+                "name": "Water Gun",
+                "power": 40,
                 "type": "Water",
                 "accuracy": 100
-            },
-            {
-                "name": "Shell Trap",
-                "power": 150,
-                "type": "Fire",
-                "accuracy": 100
-            },
-            {
-                "name": "Thunder Fang",
-                "power": 65,
-                "type": "Electric",
-                "accuracy": 95
-            },
-            {
-                "name": "Water Shuriken",
-                "power": 15,
-                "type": "Water",
-                "accuracy": 100
-            },
-            {
-                "name": "Hyperspace Hole",
-                "power": 80,
-                "type": "Psychic",
-                "accuracy": true
-            },
-            {
-                "name": "Mega Kick",
-                "power": 120,
-                "type": "Normal",
-                "accuracy": 75
-            },
-            {
-                "name": "Gear Grind",
-                "power": 50,
-                "type": "Steel",
-                "accuracy": 85
             }
         ]
     },
@@ -1947,52 +1752,52 @@
         },
         "moves": [
             {
-                "name": "Max Airstream",
-                "power": 10,
-                "type": "Flying",
-                "accuracy": true
-            },
-            {
-                "name": "Lava Plume",
+                "name": "Dragon Claw",
                 "power": 80,
-                "type": "Fire",
+                "type": "Dragon",
                 "accuracy": 100
             },
             {
-                "name": "Circle Throw",
+                "name": "Belch",
+                "power": 120,
+                "type": "Poison",
+                "accuracy": 90
+            },
+            {
+                "name": "Ivy Cudgel",
+                "power": 100,
+                "type": "Grass",
+                "accuracy": 100
+            },
+            {
+                "name": "Baddy Bad",
+                "power": 80,
+                "type": "Dark",
+                "accuracy": 95
+            },
+            {
+                "name": "Rock Slide",
+                "power": 75,
+                "type": "Rock",
+                "accuracy": 90
+            },
+            {
+                "name": "Dragon Energy",
+                "power": 150,
+                "type": "Dragon",
+                "accuracy": 100
+            },
+            {
+                "name": "Hidden Power Fighting",
                 "power": 60,
                 "type": "Fighting",
-                "accuracy": 90
-            },
-            {
-                "name": "Body Slam",
-                "power": 85,
-                "type": "Normal",
                 "accuracy": 100
             },
             {
-                "name": "Psystrike",
-                "power": 100,
-                "type": "Psychic",
+                "name": "Drill Peck",
+                "power": 80,
+                "type": "Flying",
                 "accuracy": 100
-            },
-            {
-                "name": "Foul Play",
-                "power": 95,
-                "type": "Dark",
-                "accuracy": 100
-            },
-            {
-                "name": "Hidden Power Ghost",
-                "power": 60,
-                "type": "Ghost",
-                "accuracy": 100
-            },
-            {
-                "name": "Leaf Tornado",
-                "power": 65,
-                "type": "Grass",
-                "accuracy": 90
             }
         ]
     },
@@ -2012,51 +1817,51 @@
         },
         "moves": [
             {
-                "name": "Future Sight",
-                "power": 120,
+                "name": "Rock Tomb",
+                "power": 60,
+                "type": "Rock",
+                "accuracy": 95
+            },
+            {
+                "name": "Crabhammer",
+                "power": 100,
+                "type": "Water",
+                "accuracy": 90
+            },
+            {
+                "name": "Rock Climb",
+                "power": 90,
+                "type": "Normal",
+                "accuracy": 85
+            },
+            {
+                "name": "Fiery Wrath",
+                "power": 90,
+                "type": "Dark",
+                "accuracy": 100
+            },
+            {
+                "name": "Extrasensory",
+                "power": 80,
                 "type": "Psychic",
                 "accuracy": 100
             },
             {
-                "name": "Psycho Boost",
-                "power": 140,
-                "type": "Psychic",
-                "accuracy": 90
+                "name": "Savage Spin-Out",
+                "power": 1,
+                "type": "Bug",
+                "accuracy": true
             },
             {
-                "name": "Headbutt",
-                "power": 70,
+                "name": "Horn Attack",
+                "power": 65,
                 "type": "Normal",
                 "accuracy": 100
             },
             {
-                "name": "Apple Acid",
-                "power": 80,
-                "type": "Grass",
-                "accuracy": 100
-            },
-            {
-                "name": "Max Airstream",
-                "power": 10,
-                "type": "Flying",
-                "accuracy": true
-            },
-            {
-                "name": "G-Max Snooze",
-                "power": 10,
-                "type": "Dark",
-                "accuracy": true
-            },
-            {
-                "name": "G-Max Volcalith",
-                "power": 10,
-                "type": "Rock",
-                "accuracy": true
-            },
-            {
-                "name": "Hydro Vortex",
-                "power": 1,
-                "type": "Water",
+                "name": "G-Max Fireball",
+                "power": 160,
+                "type": "Fire",
                 "accuracy": true
             }
         ]
@@ -2077,52 +1882,52 @@
         },
         "moves": [
             {
-                "name": "Max Quake",
-                "power": 10,
-                "type": "Ground",
-                "accuracy": true
-            },
-            {
-                "name": "Brave Bird",
-                "power": 120,
-                "type": "Flying",
+                "name": "Polar Flare",
+                "power": 75,
+                "type": "Fire",
                 "accuracy": 100
             },
             {
-                "name": "Pin Missile",
-                "power": 25,
-                "type": "Bug",
-                "accuracy": 95
-            },
-            {
-                "name": "Surging Strikes",
-                "power": 25,
+                "name": "Water Pledge",
+                "power": 80,
                 "type": "Water",
                 "accuracy": 100
             },
             {
-                "name": "G-Max Tartness",
+                "name": "Wicked Torque",
+                "power": 80,
+                "type": "Dark",
+                "accuracy": 100
+            },
+            {
+                "name": "Giga Impact",
+                "power": 150,
+                "type": "Normal",
+                "accuracy": 90
+            },
+            {
+                "name": "G-Max Gravitas",
                 "power": 10,
-                "type": "Grass",
+                "type": "Psychic",
                 "accuracy": true
             },
             {
-                "name": "Infernal Parade",
+                "name": "Water Pulse",
+                "power": 60,
+                "type": "Water",
+                "accuracy": 100
+            },
+            {
+                "name": "Ominous Wind",
                 "power": 60,
                 "type": "Ghost",
                 "accuracy": 100
             },
             {
-                "name": "Tachyon Cutter",
-                "power": 50,
-                "type": "Steel",
+                "name": "G-Max Volt Crash",
+                "power": 10,
+                "type": "Electric",
                 "accuracy": true
-            },
-            {
-                "name": "Photon Geyser",
-                "power": 100,
-                "type": "Psychic",
-                "accuracy": 100
             }
         ]
     },
@@ -2142,51 +1947,51 @@
         },
         "moves": [
             {
-                "name": "Luster Purge",
-                "power": 95,
-                "type": "Psychic",
+                "name": "Supercell Slam",
+                "power": 100,
+                "type": "Electric",
+                "accuracy": 95
+            },
+            {
+                "name": "Crunch",
+                "power": 80,
+                "type": "Dark",
                 "accuracy": 100
             },
             {
-                "name": "Savage Spin-Out",
-                "power": 1,
+                "name": "Rock Slide",
+                "power": 75,
+                "type": "Rock",
+                "accuracy": 90
+            },
+            {
+                "name": "Thunderous Kick",
+                "power": 90,
+                "type": "Fighting",
+                "accuracy": 100
+            },
+            {
+                "name": "Spin Out",
+                "power": 100,
+                "type": "Steel",
+                "accuracy": 100
+            },
+            {
+                "name": "Body Press",
+                "power": 80,
+                "type": "Fighting",
+                "accuracy": 100
+            },
+            {
+                "name": "Signal Beam",
+                "power": 75,
                 "type": "Bug",
-                "accuracy": true
-            },
-            {
-                "name": "Psybeam",
-                "power": 65,
-                "type": "Psychic",
                 "accuracy": 100
             },
             {
-                "name": "G-Max Centiferno",
-                "power": 10,
-                "type": "Fire",
-                "accuracy": true
-            },
-            {
-                "name": "Hidden Power Ice",
-                "power": 60,
-                "type": "Ice",
-                "accuracy": 100
-            },
-            {
-                "name": "Smog",
-                "power": 30,
-                "type": "Poison",
-                "accuracy": 70
-            },
-            {
-                "name": "Glaive Rush",
-                "power": 120,
-                "type": "Dragon",
-                "accuracy": 100
-            },
-            {
-                "name": "Dragon Darts",
-                "power": 50,
-                "type": "Dragon",
+                "name": "Pursuit",
+                "power": 40,
+                "type": "Dark",
                 "accuracy": 100
             }
         ]
@@ -2206,51 +2011,51 @@
         },
         "moves": [
             {
-                "name": "G-Max Steelsurge",
-                "power": 10,
+                "name": "Steel Roller",
+                "power": 130,
                 "type": "Steel",
-                "accuracy": true
-            },
-            {
-                "name": "Pursuit",
-                "power": 40,
-                "type": "Dark",
                 "accuracy": 100
             },
             {
-                "name": "Psyblade",
-                "power": 80,
-                "type": "Psychic",
-                "accuracy": 100
-            },
-            {
-                "name": "G-Max Cannonade",
-                "power": 10,
-                "type": "Water",
-                "accuracy": true
-            },
-            {
-                "name": "Matcha Gotcha",
-                "power": 80,
-                "type": "Grass",
-                "accuracy": 90
-            },
-            {
-                "name": "Icicle Crash",
-                "power": 85,
-                "type": "Ice",
-                "accuracy": 90
-            },
-            {
-                "name": "X-Scissor",
-                "power": 80,
-                "type": "Bug",
-                "accuracy": 100
-            },
-            {
-                "name": "Earthquake",
+                "name": "Nihil Light",
                 "power": 100,
-                "type": "Ground",
+                "type": "Dragon",
+                "accuracy": 100
+            },
+            {
+                "name": "Twinkle Tackle",
+                "power": 1,
+                "type": "Fairy",
+                "accuracy": true
+            },
+            {
+                "name": "Trop Kick",
+                "power": 70,
+                "type": "Grass",
+                "accuracy": 100
+            },
+            {
+                "name": "Moonblast",
+                "power": 95,
+                "type": "Fairy",
+                "accuracy": 100
+            },
+            {
+                "name": "Water Pulse",
+                "power": 60,
+                "type": "Water",
+                "accuracy": 100
+            },
+            {
+                "name": "G-Max Volcalith",
+                "power": 10,
+                "type": "Rock",
+                "accuracy": true
+            },
+            {
+                "name": "Brutal Swing",
+                "power": 60,
+                "type": "Dark",
                 "accuracy": 100
             }
         ]
